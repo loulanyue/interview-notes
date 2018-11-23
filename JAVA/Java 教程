@@ -1,0 +1,78 @@
+Java 是由Sun Microsystems公司于1995年5月推出的高级程序设计语言。
+Java可运行于多个平台，如Windows, Mac OS，及其他多种UNIX版本的系统。
+本教程通过简单的实例将让大家更好的了解JAVA编程语言。
+Java 在线工具
+JDK 1.6 在线中文手册
+我的第一个 JAVA 程序
+以下我们通过一个简单的实例来展示 Java 编程，创建文件 HelloWorld.java(文件名需与类名一致), 代码如下：
+实例
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+运行实例 »
+注：String args[] 与 String[] args 都可以执行，但推荐使用 String[] args，这样可以避免歧义和误读。
+运行以上实例，输出结果如下：
+$ javac HelloWorld.java
+$ java HelloWorld
+Hello World
+执行命令解析：
+以上我们使用了两个命令 javac 和 java。
+javac 后面跟着的是java文件的文件名，例如 HelloWorld.java。 该命令用于将 java 源文件编译为 class 字节码文件，如： javac HelloWorld.java。
+运行javac命令后，如果成功编译没有错误的话，会出现一个 HelloWorld.class 的文件。
+java 后面跟着的是java文件中的类名,例如 HelloWorld 就是类名，如: java HelloWorld。
+注意：java命令后面不要加.class。
+
+
+
+有的小伙伴看到后不理解，为什么是 String[] args，这个 args 是干嘛的？
+String[] args 可以看出来它是一个数组。在命令行中比如运行 Test.class 文件,你可以这样写：
+java Test runoob
+相当于给数组传入了一个 runoob 字符串。也可以打印出来，可以作为简单的输入。
+例如：
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(args[0]);
+    }
+}
+运行以上实例，输出结果如下：
+$ javac Test.java
+$ java Test runoob
+runoob
+此处注意，main 是一个程序的入口，一个 java 程序运行必须而且有且仅有一个 main 方法。
+args[0] 是你传入的第一个参数，args[1]是传入的第二个参数，以此类推。
+
+
+
+String[] args 还有一种等价的写法： String... args
+前者为数组形式, 后者为可变参数形式。
+前者用得较多, 但是看到后者也应认识。
+
+
+
+Java 程序利用 main 函数中 args 参数实现参数的传递(传递空格处理)
+public class Test
+{
+    public static void main(String []args)
+    {
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+        System.out.println(args[2]);
+    }
+}
+用控制台编译运行：
+$ javac Test.java
+$ java Test aaa bbb ccc 
+aaa
+bbb
+ccc
+注意：三个参数之间用空格隔开！
+如果要输出空格怎么办？
+只需要在包含空格的参数上，使用双引号 "" 即可。
+实例运行：
+$ java Test aaa "b   bb" ccc
+aaa
+b   bb
+ccc
