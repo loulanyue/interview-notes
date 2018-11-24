@@ -32,7 +32,7 @@ root@3729b97e8226:/# exit
 exit
 ```
 
-我们以交互式终端方式进入 `webserver` 容器，并执行了 `bash` 命令，也就是获得一个可操作的 Shell。
+我们以交互式终端方式进入 `webserver` 容器，并执行了 `bash` 命令，也就1是获得一个可操作的 Shell。
 
 然后，我们用 `<h1>Hello, Docker!</h1>` 覆盖了 `/usr/share/nginx/html/index.html` 的内容。
 
