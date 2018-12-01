@@ -1,0 +1,32 @@
+在上一章中，我们检出了版本库runoob01，对应的目录放在/home/user01/runoob01中，下面我们针对这个库进行版本控制。
+
+我们在库本版中需要增加一个readme的说明文件。
+
+root@runoob:~/svn/runoob01/trunk# cat readme 
+this is SVN tutorial.
+查看工作副本中的状态。
+
+root@runoob:~/svn/runoob01/trunk# svn status
+?       readme
+此时 readme的状态为？，说明它还未加到版本控制中。
+
+将文件readme加到版本控制，等待提交到版本库。
+
+root@runoob:~/svn/runoob01/trunk# svn add readme 
+A         readme
+查看工作副本中的状态
+
+root@runoob:~/svn/runoob01/trunk# svn status     
+A       readme
+此时 readme的状态为A,它意味着这个文件已经被成功地添加到了版本控制中。
+
+为了把 readme 存储到版本库中，使用 commit -m 加上注释信息来提交。
+
+如果你忽略了 -m 选项， SVN会打开一个可以输入多行的文本编辑器来让你输入提交信息。
+
+root@runoob:~/svn/runoob01/trunk# svn commit -m "SVN readme."
+Adding         readme
+Transmitting file data .
+Committed revision 8.
+svn commit -m "SVN readme."
+现在 readme 被成功地添加到了版本库中，并且修订版本号自动增加了1。
