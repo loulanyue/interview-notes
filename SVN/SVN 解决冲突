@@ -1,0 +1,55 @@
+版本冲突原因：
+假设 A、B 两个用户都在版本号为 100 的时候，更新了 kingtuns.txt 这个文件，A 用户在修改完成之后提交 kingtuns.txt 到服务器， 这个时候提交成功，这个时候 kingtuns.txt 文件的版本号已经变成 101 了。同时B用户在版本号为 100 的 kingtuns.txt 文件上作修改， 修改完成之后提交到服务器时，由于不是在当前最新的 101 版本上作的修改，所以导致提交失败。
+
+我们已在本地检出 runoob01 库，下面我们将实现版本冲突的解决方法。
+
+我们发现 HelloWorld.html 文件存在错误，需要修改文件并提交到版本库中。
+
+我们将 HelloWorld.html 的内容修改为 "HelloWorld! http://www.runoob.com/"。
+
+root@runoob:~/svn/runoob01/trunk# cat HelloWorld.html 
+HelloWorld! http://www.runoob.com/
+用下面的命令查看更改：
+
+root@runoob:~/svn/runoob01/trunk# svn diff 
+Index: HelloWorld.html
+===================================================================
+--- HelloWorld.html     (revision 5)
++++ HelloWorld.html     (working copy)
+@@ -1,2 +1 @@
+-HelloWorld! http://www.runoob.com/
++HelloWorld! http://www.runoob.com/!
+尝试使用下面的命令来提交他的更改：
+
+root@runoob:~/svn/runoob01/trunk# svn commit -m "change HelloWorld.html first"
+Sending        HelloWorld.html
+Transmitting file data .svn: E160028: Commit failed (details follow):
+svn: E160028: File '/trunk/HelloWorld.html' is out of date
+这时我发现提交失败了。
+
+因为此时，HelloWorld.html 已经被 user02 修改并提交到了仓库。Subversion 不会允许 user01(本例使用的 svn 账号)提交更改，因为 user02 已经修改了仓库，所以我们的工作副本已经失效。
+
+为了避免两人的代码被互相覆盖，Subversion 不允许我们进行这样的操作。所以我们在提交更改之前必须先更新工作副本。所以使用 update 命令，如下：
+
+root@runoob:~/svn/runoob01/trunk# svn update
+Updating '.':
+C    HelloWorld.html
+Updated to revision 6.
+Conflict discovered in file 'HelloWorld.html'.
+Select: (p) postpone, (df) show diff, (e) edit file, (m) merge,
+        (mc) my side of conflict, (tc) their side of conflict,
+        (s) show all options: mc
+Resolved conflicted state of 'HelloWorld.html'
+Summary of conflicts:
+  Text conflicts: 0 remaining (and 1 already resolved)
+这边输入"mc",以本地的文件为主。你也可以使用其选项对冲突的文件进行不同的操作。
+
+默认是更新到最新的版本，我们也可以指定更新到哪个版本
+
+svn update -r6
+此时工作副本是和仓库已经同步，可以安全地提交更改了
+
+root@runoob:~/svn/runoob01/trunk# svn commit -m "change HelloWorld.html second"
+Sending        HelloWorld.html
+Transmitting file data .
+Committed revision 7.
