@@ -1,0 +1,52 @@
+首先,在服务端进行SVN版本库的相关配置
+
+手动新建版本库目录
+
+mkdir /opt/svn
+利用svn命令创建版本库
+
+svnadmin create /opt/svn/runoob
+使用命令svnserve启动服务
+
+svnserve -d -r 目录 --listen-port 端口号
+-r: 配置方式决定了版本库访问方式。
+
+--listen-port: 指定SVN监听端口，不加此参数，SVN默认监听3690
+
+由于-r 配置方式的不一样，SVN启动就可以有两种不同的访问方式
+
+方式一：-r直接指定到版本库(称之为单库svnserve方式)
+
+svnserve -d -r /opt/svn/runoob
+在这种情况下，一个svnserve只能为一个版本库工作。
+
+authz配置文件中对版本库权限的配置应这样写：
+
+[groups]
+admin=user1
+dev=user2
+[/]
+@admin=rw
+user2=r
+使用类似这样的URL：svn://192.168.0.1/　即可访问runoob版本库
+
+方式二：指定到版本库的上级目录(称之为多库svnserve方式)
+
+svnserve -d -r /opt/svn
+这种情况，一个svnserve可以为多个版本库工作
+
+authz配置文件中对版本库权限的配置应这样写：
+
+[groups]
+admin=user1
+dev=user2
+[runoob:/]
+@admin=rw
+user2=r
+
+[runoob01:/]
+@admin=rw
+user2=r
+如果此时你还用[/]，则表示所有库的根目录，同理，[/src]表示所有库的根目录下的src目录。
+
+使用类似这样的URL：svn://192.168.0.1/runoob　即可访问runoob版本库。
