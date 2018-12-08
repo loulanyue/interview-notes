@@ -23,7 +23,7 @@ $ sudo yum remove docker \
                   docker-selinux \
                   docker-engine-selinux \
                   docker-engine
-```
+
 
 ### 使用 yum 安装
 
