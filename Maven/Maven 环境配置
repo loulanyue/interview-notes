@@ -1,0 +1,71 @@
+Maven 是一个基于 Java 的工具，所以要做的第一件事情就是安装 JDK。
+如果你还未安装 JDK，可以参考我们的 Java 开发环境配置。
+系统要求
+项目	要求
+JDK	Maven 3.3 要求 JDK 1.7 或以上
+Maven 3.2 要求 JDK 1.6 或以上
+Maven 3.0/3.1 要求 JDK 1.5 或以上
+内存	没有最低要求
+磁盘	Maven 自身安装需要大约 10 MB 空间。除此之外，额外的磁盘空间将用于你的本地 Maven 仓库。你本地仓库的大小取决于使用情况，但预期至少 500 MB
+操作系统	没有最低要求
+检查 Java 安装
+操作系统	任务	命令
+Windows	打开命令控制台	
+c:\> java -version
+Linux	打开命令终端	
+# java -version
+Mac	打开终端	
+$ java -version
+Maven 下载
+Maven 下载地址：http://maven.apache.org/download.cgi
+
+不同平台下载对应的包：
+系统	包名
+Windows	apache-maven-3.3.9-bin.zip
+Linux	apache-maven-3.3.9-bin.tar.gz
+Mac	apache-maven-3.3.9-bin.tar.gz
+下载包后解压到对应目录：
+系统	存储位置 (可根据自己情况配置)
+Windows	E:\Maven\apache-maven-3.3.9
+Linux	/usr/local/apache-maven-3.3.9
+Mac	/usr/local/apache-maven-3.3.9
+设置 Maven 环境变量
+添加环境变量 MAVEN_HOME：
+系统	配置
+Windows	
+右键 "计算机"，选择 "属性"，之后点击 "高级系统设置"，点击"环境变量"，来设置环境变量，有以下系统变量需要配置：
+新建系统变量 MAVEN_HOME，变量值：E:\Maven\apache-maven-3.3.9
+
+编辑系统变量 Path，添加变量值：;%MAVEN_HOME%\bin
+
+注意：注意多个值之间需要有分号隔开，然后点击确定。
+Linux	
+下载解压：
+# wget http://mirrors.hust.edu.cn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+# tar -xvf  apache-maven-3.3.9-bin.tar.gz
+# sudo mv -f apache-maven-3.3.9 /usr/local/
+编辑 /etc/profile 文件 sudo vim /etc/profile，在文件末尾添加如下代码：
+export MAVEN_HOME=/usr/local/apache-maven-3.3.9
+export PATH=${PATH}:${MAVEN_HOME}/bin
+保存文件，并运行如下命令使环境变量生效：
+# source /etc/profile
+在控制台输入如下命令，如果能看到 Maven 相关版本信息，则说明 Maven 已经安装成功：
+# mvn -v
+Mac	
+下载解压：
+$ curl -O http://mirrors.hust.edu.cn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+$ tar -xvf  apache-maven-3.3.9-bin.tar.gz
+$ sudo mv -f apache-maven-3.3.9 /usr/local/
+编辑 /etc/profile 文件 sudo vim /etc/profile，在文件末尾添加如下代码：
+export MAVEN_HOME=/usr/local/apache-maven-3.3.9
+export PATH=${PATH}:${MAVEN_HOME}/bin
+保存文件，并运行如下命令使环境变量生效：
+$ source /etc/profile
+在控制台输入如下命令，如果能看到 Maven 相关版本信息，则说明 Maven 已经安装成功：
+$ mvn -v
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-11T00:41:47+08:00)
+Maven home: /usr/local/apache-maven-3.3.9
+Java version: 1.8.0_31, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre
+Default locale: zh_CN, platform encoding: ISO8859-1
+OS name: "mac os x", version: "10.13.4", arch: "x86_64", family: "mac"
