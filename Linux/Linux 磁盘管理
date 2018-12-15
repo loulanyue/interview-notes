@@ -23,6 +23,7 @@ Filesystem      1K-blocks      Used Available Use% Mounted on
 /dev/hdc3         4956316    141376   4559108   4% /home
 /dev/hdc1          101086     11126     84741  12% /boot
 tmpfs              371332         0    371332   0% /dev/shm
+
 在 Linux 底下如果 df 没有加任何选项，那么默认会将系统内所有的 (不含特殊内存内的文件系统与 swap) 都以 1 Kbytes 的容量来列出来！
 实例 2
 将容量结果以易读的容量格式显示出来
