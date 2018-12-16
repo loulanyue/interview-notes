@@ -19,4 +19,3 @@ debug_program_3
 variables(变量)视图可以查看变量的值。
 debug_program_4
 Run 菜单中有继续执行(Resume)菜单项，跳过(Step Over)一行代码，进入函数(Step Into)等。
-debug_program_5
