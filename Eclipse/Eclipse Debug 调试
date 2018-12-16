@@ -1,5 +1,5 @@
 Debug 调试 Java 程序
-我们可以在 Package Explorer 视图调试 Java 程序，操作步骤如下：
+在 Package Explorer 视图调试 Java 程序，操作步骤如下：
 鼠标右击包含 main 函数的 java 类
 选择 Debug As > Java Application
 该操作也可以通过快捷键来完成，快捷键组合为 Alt + Shift + D, J。
@@ -20,4 +20,3 @@ variables(变量)视图可以查看变量的值。
 debug_program_4
 Run 菜单中有继续执行(Resume)菜单项，跳过(Step Over)一行代码，进入函数(Step Into)等。
 debug_program_5
-以上图片中显示了 Resume, Step Into 和 Step Over 等关联的快捷键操作。
