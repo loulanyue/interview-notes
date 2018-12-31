@@ -24,7 +24,7 @@ echo -e "OK! \n" # -e 开启转义
 echo "It is a test"
 输出结果：
 OK!
-
+ 
 It is a test
 5.显示不换行
 #!/bin/sh
