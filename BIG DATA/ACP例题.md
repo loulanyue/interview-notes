@@ -1,5 +1,7 @@
 MaxCompute只支持结构化数据的存储和处理。 × 支持非结构，如图片
+
 MaxCompute对表的列数和列的内容没有限制。 ×最多1024列，内容大小受限于数据类型。
+
 Select的where子句可以指定查询范围，这样可以避免全表扫描。 ×只有分区表能避免全表扫描。
 
 下列产品中，能满足用户使用SQL进行交互式查询需求的是
@@ -23,8 +25,11 @@ D、用户触发
 ABC
 
 阿里云流计算目前可以支持SQL和MapReduce。×不支持MapReduce
+
 流计算对不同的项目进行了严格的项目权限区分，不同用户/项目之间是无法进行访问、操作。✔️
+
 Oracle存储过程可以使用阿里云流计算替换。×
+
 现有Spark作业可以无缝迁移到流计算。×，无法无缝迁移。
 
 DataWorks中工作流任务如果配置为周期性调度，所支持的周期包括哪些？
@@ -48,7 +53,9 @@ ABC
 MaxCompute Graph支持以下图编辑操作：ABC （没有节点间通信）
 
 Graph最早是由Google提出的分布式数据处理模型。× MapReduce才是
+
 Graph擅长完成学术论文、专利文献的引用分析和统计。× 是MapReduce擅长的
+
 Graph节点的Halted标志的含义是节点是否参与迭代计算。✔️
 
 对AnalyticDB正确的是？（）
@@ -56,8 +63,11 @@ A、分析型数据库    B、可用于流式计算    C、支持SQL查询 �
 ACD
 
 AnalyticDB是阿里云提供的数据仓库，可用于完成PB级别数据的批量计算。×擅长的是交互式查询
+
 每个DataWorks任务使用0个或0个以上的数据表（数据集）作为输入，生成一个或多个数据表（数据集）作为输出。 ✔️
+
 MaxCompute中日期型和布尔型不允许参与算术运算。✔️String也可以参与算术运算
+
 MaxCompute中，A和B都是bigint类型，A/B返回结果为___。 Double
 
 MaxCompute的Table的名字，错误的是：
@@ -68,9 +78,13 @@ D、长度不超过128字节
 A
 
 MaxCompute SQL中 位运算只允许bigint类型。✔️
+
 MaxCompute SQL中 常量定义100BD表示的含义是___。数值为100的decimal
+
 MaxCompute SQL中 隐式类型转换规则是有发生作用域的，在某些作用域中，只有一部分规则可以生效。✔️
+
 MaxCompute中 一个multi-insert中：对于未分区表，该表不能出现多次。✔️
+
 MaxCompute中 如果目标表有多级分区，在运行insert语句时允许指定部分分区为静态，但静态分区必须是高级分区。✔️
 
 二：
