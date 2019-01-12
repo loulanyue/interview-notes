@@ -136,8 +136,10 @@ select a.* from a left outer join (select distinct id from b) bb on a.id=bb.id w
 
 Q：MaxCompute 项目中的 Owner 能否更换为子账号？
 A：项目的 Owner 不可以更换，谁创建的 Project，谁就是 Owner。您可以将 Admin 的角色赋予子账号。
+
 Q：与 Owner 相比，Admin 角色有哪些限制？
 A：与 Owner 相比，Admin 角色不能进行如下操作：
+
 Admin 角色不能将 admin 权限指派给用户。
 不能设定项目空间的安全配置。
 不能修改项目空间的鉴权模型。
@@ -147,6 +149,7 @@ Admin 角色所对应的权限不能被修改。
 Q：在 MaxCompute SQL 执行过程中，报错为Table xx has n columns， but query has m columns。
 A：MaxCompute SQL 使用 INSERT INTO/OVERWRITE TABLE XXX SELECT 插入数据时，需要保证 SELECT 查询出来的字段和插入的表的字段，包括顺序、字段类型都能匹配，当然总的字段数量上也要能对的上。
 目前 MaxCompute 不支持指定插入表中某几个字段，其他字段为 NULL 或者其他默认值的情况，您可以在 SELECT 的时候设置成 NULL，例如：SELECT ‘a’,NULL FROM XX。
+
 Q：用insert into…values...语句插入表记录报错，请问如何向 MaxCompute 表中插入记录？
 A：向 MaxCompute 表中插入记录的操作步骤如下：
 创建一个表， 例如 dual 表。语句如下：
@@ -159,30 +162,43 @@ insert into table xxxx select 1,2,3 from dual;
 tunnel：
 Q：是否支持 ascii 字符的分隔符？
 A：命令行方式不支持，配置文件可以用十六进制表示。如 \u000A，表示回车。
+
 Q：文件大小是否有限制？
 A：文件大小没有限制，但一次 upload 无法超过 24 小时，可以根据实际上传速度和时间来估算能够上传的数据量。
+
 Q：记录大小是否有限制？
 A：记录大小不能超过 200M。
+
 Q：是否要使用压缩？
 A：默认会使用压缩，如果带宽允许的情况下，可以关掉压缩。
+
 Q：同一个表或 partition 是否可以并行上传？
 A：可以。
+
 Q：是否支持不同字符编码？
 A：支持不同的编码格式参数，带 bom 标识文件不需要指定编码。
+
 Q：导入后的脏数据怎么处理？
 A：导入结束后，如果有脏数据可以通过 tunnel show bad [sessionid] 查看脏数据。
+
 Q：上传下载的文件路径是否可以有空格？
 A：可以有空格，参数需要用双引号括起来。
+
 Q：为什么会出现乱码？
 A：可能是上传文件的字符编码和工具指定的编码不符。
+
 Q：导入数据最后一列为什么多出\r符号？
 A：windows 的换行符是\r\n，macosx 和 linux 的换行符是\n，tunnel 命令使用系统换行符作为默认列分隔符，所以从 macosx 或 linux 上传 windows 编辑保存的文件会把\r作为数据内容导进去。
+
 Q：Tunnel 下载/上传速度正常速度范围是多少？
 A：Tunnel 下载上传，受网络因素影响较大，正常网络情况下速度范围在 1MB/s-20MB/s 区间内。
+
 Q：Tunnel 域名是什么？
 A：不同 region 对应不同的域名，详情请参见 访问域名和数据中心。
+
 Q：无法上传/下载怎么办？
 A：找到配置中配置的 tunnel 域名，通过 curl -i 域名例如 curl -i http://dt.odps.aliyun.com 测试网络是否连通，若无法连通请检查机器网络或更换为正确的域名。
+
 Q：上传/下载速度缓慢怎么办？
 A：您可以从以下几方面进行检查：
 检查机器网络状态，ping tunnel_endpoint 域名延迟是否异常。
