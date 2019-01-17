@@ -1,5 +1,6 @@
 大数据计算服务（MaxCompute，原名ODPS）是一种快速、完全托管的GB/TB/PB级数据仓库解决方案。
 
+
 MaxCompute服务于批量结构化数据的存储和计算，提供海量数据仓库的解决方案及分析建模服务。
 
 MaxCompute支持SQL、MapReduce、Graph等计算类型及MPI迭代类算法。
