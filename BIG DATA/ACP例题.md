@@ -1,11 +1,15 @@
-MaxCompute只支持结构化数据的存储和处理。 × 支持非结构，如图片
+MaxCompute只支持结构化数据的存储和处理。 ×支持非结构，如图片
 
 MaxCompute对表的列数和列的内容没有限制。 ×最多1024列，内容大小受限于数据类型。
 
 Select的where子句可以指定查询范围，这样可以避免全表扫描。 ×只有分区表能避免全表扫描。
 
 下列产品中，能满足用户使用SQL进行交互式查询需求的是
-A：MaxCompute B:AnalyticDB C:RDS D:TS
+A：MaxCompute 
+B:AnalyticD
+B C:RDS 
+D:TS
+
 BC；MaxCompute是批量计算模型；TS不支持SQL访问。
 
 MaxCompute使用DDL建表一开始没有分区字段，在使用时可以动态增加或更改分区。×不能直接增加/更改分区键，可以增加分区，不能增加分区字段。
