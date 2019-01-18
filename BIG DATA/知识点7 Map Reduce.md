@@ -1,5 +1,6 @@
 1、输入数据：对文本进行分片，将每片内的数据作为单个Map Worker的输入。
 
+
 2、Map阶段：Map处理输入，每获取一个数字，将数字的Count 设置为1，并将此对输出，此时以Word作为输出数据的Key。
 
 3、Shuffle>合并排序：在Shuffle阶段前期，首先对每个Map Worker的输出，按照Key值（即Word值）进行排序。排序后进行Combiner操作，即将Key值（Word值）相同的Count累加，构成一个新的对。此过程被称为合并排序。
@@ -29,6 +30,7 @@ MaxCompute MapReduce的输入、输出，支持MaxCompute内置类型的Bigint�
 输入可以为空，不支持视图（View）作为输入。
 
 Reduce接受多路输出，可以输出到不同表，或者同一张表的不同分区。不同输出的Schema可以不同。不同输出间通过label进行区分，默认输出不必加label，但目前不接受没有输出的情况。
+
 
 **JAVA沙箱：
 **
