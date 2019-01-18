@@ -1,5 +1,6 @@
 MaxCompute Graph是一套面向迭代的图计算处理框架。图计算作业使用图进行建模，图由点（Vertex）和边（Edge）组成，点和边包含权值（Value）。
 
+
 MaxCompute Graph支持以下图编辑操作：
 1、修改点或边的权值。
 2、增加/删除点。
@@ -20,6 +21,7 @@ v1 <1, 5, false, [ <2, 3>, <3, 2>, <5, 9>]>
 v2 <2, 8, false, [<1, 2>, <5, 1 >]>
 v3 <3, Long.MAX_VALUE, false, [<0, 7>, <5, 6>]>
 v5 <5, Long.MAX_VALUE, false, [<3, 4 > ]>
+
 
 迭代计算
 
