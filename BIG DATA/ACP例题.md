@@ -5,10 +5,11 @@ MaxCompute对表的列数和列的内容没有限制。 ×最多1024列，内容
 Select的where子句可以指定查询范围，这样可以避免全表扫描。 ×只有分区表能避免全表扫描。
 
 下列产品中，能满足用户使用SQL进行交互式查询需求的是
-A：MaxCompute 
-B:AnalyticDB
-C:RDS 
-D:TS
+
+        A：MaxCompute 
+        B:AnalyticDB
+        C:RDS 
+        D:TS
 
 BC；MaxCompute是批量计算模型；TS不支持SQL访问。
 
