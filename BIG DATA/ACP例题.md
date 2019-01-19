@@ -99,10 +99,11 @@ MaxCompute中 如果目标表有多级分区，在运行insert语句时允许指
 
 二：
 任务调度时间为2017-10-2701:00:00，那么bdp.system.cyctim的结果为20171027010000
-A. 是
-B. 否
-答案： A
-解析： ${bdp.system.cyctime}=$[yyyymmddhh24miss]可以任意分解组合，即某一时刻进行调度就显示某个时间的值，精确到秒
+
+                A. 是
+                B. 否
+                答案： A
+                解析： ${bdp.system.cyctime}=$[yyyymmddhh24miss]可以任意分解组合，即某一时刻进行调度就显示某个时间的值，精确到秒
 
 DataX是阿里巴巴集团内广泛使用的离线数据同步工具/平台，实现包括MySQL、Oracle、HDFS、Hive、Table Store、MaxCompute等各种异构数据源之间高效的数据同步功能,支持数据续传
 A. 是
