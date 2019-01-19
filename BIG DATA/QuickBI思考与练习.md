@@ -2,7 +2,7 @@
 
 	多快好省
 	
-	RDS MaxCompute AnalyticDB
+	RDS、MaxCompute、AnalyticDB
 
 02 QuickBI制作一张报表需要哪几步，说明一下？
 
