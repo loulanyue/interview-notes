@@ -15,13 +15,20 @@ https://help.aliyun.com/document_detail/27875.html?spm=a2c4g.11186623.2.13.uBsiq
 UDF：
 https://help.aliyun.com/document_detail/27866.html?spm=a2c4g.11186623.2.22.cmHUQg
 
+
 MaxCompute Graph 是一套面向迭代的图计算处理框架。图计算作业使用图进行建模，图由点（Vertex）和边（Edge）组成，点和边包含权值（Value）。https://help.aliyun.com/document_detail/27901.html?spm=a2c4g.11186623.6.669.MLWaOz
 
 
 DataHub
+
 https://help.aliyun.com/document_detail/47439.html?spm=a2c4g.11174283.3.1.vKmf5b
+
 阿里云流数据处理平台DataHub是流式数据（Streaming Data）的处理平台，提供对流式数据的发布（Publish），订阅（Subscribe）和分发功能，让您可以轻松构建基于流式数据的分析和应用。DataHub服务可以对各种移动设备，应用软件，网站服务，传感器等产生的大量流式数据进行持续不断的采集，存储和处理。您可以编写应用程序或者使用流计算引擎来处理写入到DataHub的流式数据，比如：实时web访问日志、应用日志、各种事件等，并产出各种实时的数据处理结果，比如：实时图表、报警信息、实时统计等。
+
+
 DataHub服务基于阿里云自研的飞天平台，具有高可用，低延迟，高可扩展，高吞吐的特点。DataHub与阿里云流计算引擎StreamCompute无缝连接，您可以轻松使用SQL进行流数据分析。
+
+
 DataHub服务也提供分发流式数据到各种云产品的功能，目前支持分发到MaxCompute（原ODPS），OSS等。
 StreamCompute是阿里云提供的流计算引擎，提供使用类SQL的语言来进行流式计算。DataHub 和StreamCompute无缝结合，可以作为StreamCompute的数据源和输出源。
 
