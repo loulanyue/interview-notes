@@ -7,7 +7,6 @@ MaxCompute 支持 SQL、MapReduce、Graph 等计算类型及 MPI 迭代类算法
 MaxCompute批量、历史数据通道是Tunnel，实时、增量数据通道，可以用DataHub，DataHub还支持多种数据传输插件：Logstash、Flume、Fluentd、Sqoop，支持日志服务Log Service。
 
 MaxCompute 支持多种计算模型：SQL、UDF、MapReduce、Graph
-
     MaxCompute SDK：
     https://help.aliyun.com/document_detail/34614.html?spm=a2c4g.11186623.2.18.uBsiqW
     MapReduce：
