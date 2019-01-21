@@ -8,12 +8,12 @@ MaxCompute批量、历史数据通道是Tunnel，实时、增量数据通道，�
 
 MaxCompute 支持多种计算模型：SQL、UDF、MapReduce、Graph
 
-MaxCompute SDK：
-https://help.aliyun.com/document_detail/34614.html?spm=a2c4g.11186623.2.18.uBsiqW
-MapReduce：
-https://help.aliyun.com/document_detail/27875.html?spm=a2c4g.11186623.2.13.uBsiqW
-UDF：
-https://help.aliyun.com/document_detail/27866.html?spm=a2c4g.11186623.2.22.cmHUQg
+    MaxCompute SDK：
+    https://help.aliyun.com/document_detail/34614.html?spm=a2c4g.11186623.2.18.uBsiqW
+    MapReduce：
+    https://help.aliyun.com/document_detail/27875.html?spm=a2c4g.11186623.2.13.uBsiqW
+    UDF：
+    https://help.aliyun.com/document_detail/27866.html?spm=a2c4g.11186623.2.22.cmHUQg
 
 
 MaxCompute Graph 是一套面向迭代的图计算处理框架。图计算作业使用图进行建模，图由点（Vertex）和边（Edge）组成，点和边包含权值（Value）。https://help.aliyun.com/document_detail/27901.html?spm=a2c4g.11186623.6.669.MLWaOz
@@ -39,17 +39,18 @@ DataWorks
 修改服务
 
 通常情况下，通过DataWorks的项目空间实现数据开发和运维，包含以下操作：
-步骤1：建表并上传数据
-（创建；本地上传·最大10M；tunnel；dataX）
-步骤2：创建工作流
-（支持的任务类型：ODPS_SQL、ODPS_MR、数据同步、OPEN_MR、机器学习、SHELL、虚节点）
-步骤3：创建同步任务
-步骤4：设置周期和依赖
-步骤5：运维及日志排错
-如何确认实例运行的定时时间和相互依赖关系符合预期呢？提供三种触发方式：测试运行、补数据运行、周期运行。
-测试运行：手动触发方式。如果您仅需确认单个任务的定时情况和运行，建议使用测试运行。
-补数据运行：手动触发方式。如果您需要确认多个任务的定时情况和相互依赖关系，或者需要从某个根任务开始重新执行数据分析计算，可以考虑使用此方式。
-周期运行：系统自动触发方式。提交成功的任务，调度系统在第二天０点起会自动生成当天不同时间点的运行实例，并在定时时间达到时检查各实例的上游实例是否运行成功，如果定时时间已到并且上游实例全部运行成功，则当前实例会自动触发运行，无需人工干预。
+
+    步骤1：建表并上传数据
+    （创建；本地上传·最大10M；tunnel；dataX）
+    步骤2：创建工作流
+    （支持的任务类型：ODPS_SQL、ODPS_MR、数据同步、OPEN_MR、机器学习、SHELL、虚节点）
+    步骤3：创建同步任务
+    步骤4：设置周期和依赖
+    步骤5：运维及日志排错
+    如何确认实例运行的定时时间和相互依赖关系符合预期呢？提供三种触发方式：测试运行、补数据运行、周期运行。
+    测试运行：手动触发方式。如果您仅需确认单个任务的定时情况和运行，建议使用测试运行。
+    补数据运行：手动触发方式。如果您需要确认多个任务的定时情况和相互依赖关系，或者需要从某个根任务开始重新执行数据分析计算，可以考虑使用此方式。
+    周期运行：系统自动触发方式。提交成功的任务，调度系统在第二天０点起会自动生成当天不同时间点的运行实例，并在定时时间达到时检查各实例的上游实例是否运行成功，如果定时时间已到并且上游实例全部运行成功，则当前实例会自动触发运行，无需人工干预。
 
 
 
@@ -63,11 +64,12 @@ DataWorks（数据工场）的调度资源分为以下两种模式：
 数据集成，是阿里集团对外提供的稳定高效、弹性伸缩的数据同步平台。致力于提供复杂网络环境下、丰富的异构数据源之间数据   高速稳定的数据移动及同步能力。
 
 数据集成提供丰富的数据源支持，如下所示：
-文本存储（FTP / SFTP / OSS / 多媒体文件等）。
-数据库（RDS / DRDS / MySQL / PostgreSQL 等）。
-NoSQL（Memcache / Redis / MongoDB / HBase 等）。
-大数据（MaxCompute / AnalyticDB / HDFS 等）。
-MPP 数据库（HybridDB for MySQL 等）。
+
+    文本存储（FTP / SFTP / OSS / 多媒体文件等）。
+    数据库（RDS / DRDS / MySQL / PostgreSQL 等）。
+    NoSQL（Memcache / Redis / MongoDB / HBase 等）。
+    大数据（MaxCompute / AnalyticDB / HDFS 等）。
+    MPP 数据库（HybridDB for MySQL 等）。
 
 同步有两种模式：向导模式、脚本模式；
 脚本模式用json脚本，向导模式生成的代码可以转换为脚本模式，但不能反向。代码编写前要完成数据源的配置和目标表的创建。
@@ -86,8 +88,10 @@ MPP 数据库（HybridDB for MySQL 等）。
 DataWorks（数据工场，原大数据开发套件）提供了 ２种 任务类型 7种 节点类型：
 任务类型：节点任务和工作流任务。
 节点类型：虚节点类型，ODPS_SQL 节点类型，SHELL 节点类型，数据同步节点类型，机器学习节点类型，ODPS_MR 节点类型和 OPEN_MR 节点类型。
+
 调度参数配置：
 https://help.aliyun.com/document_detail/30281.html?spm=a2c4g.11186623.2.14.PWxXPY
+
 发布管理：
 https://help.aliyun.com/document_detail/30282.html?spm=a2c4g.11186623.6.652.Wpndsr
 
