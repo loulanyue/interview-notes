@@ -3,31 +3,41 @@ user_id bigint,view_time bigint,page_url string,referrer_url string,ip string co
 
 注：comment后为注释，用单引号区分。分区字段单列，dt和country为两个分区，根据顺序dt为一级分区，country为二级分区，MAXCOMPUTE支持的最大分区数为6个，表的最大列数为1200列。
 
+
 creat table page_view_test like page_view;
 注：like语句只复制表的结构，schema相同，新建的表中没有数据，也不复制原表的生命周期。
+
 
 creat table page_view_url as select page_url,referrer_url from page view;
 注：as语句只复制表的数据，不完全复制表的结构，新建的表中没有分区，也不复制原表的生命周期。
 
+
 备注：Partitioned by指定表的分区字段，目前支持Tinyint、Smallint、 Int、 Bigint、Varchar和String类型。分区值不允许有双字节字符（如中文），必须是以英文字母a-z，A-Z开始后可跟字母数字，名称的长度不超过128字节。一张表最多允许60000个分区，单表的分区层次不能超过6级。注释内容是长度不超过1024字节的有效字符串。
+
 
 desc page_view;
 注：查看表的信息
 
+
 desc extended page_view;
 注：查看外部表的信息
+
 
 drop table page_view;
 注：删除表
 
+
 drop table if exists page_view;
 注：删除表，如果不指定if exists选项而表不存在，则返回异常。若指定此选项，无论表是否存在，皆返回成功。
+
 
 alter table page_view rename to page_view_1;
 注：修改表的名字
 
+
 alter table page_view set comment 'new';
 注：修改表的注释
+
 
 turncate table page_view;
 注：清除非分区表中的信息
