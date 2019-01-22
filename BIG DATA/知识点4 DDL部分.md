@@ -48,6 +48,7 @@ turncate table page_view drop partition (dt='2011-12-17);
 注：清除分区表中某个分区的信息
 
 
+
 creat table page_view (user_id bigint) lifecycle 100;
 注：新建表并把表的生命周期设置为100天。
 
