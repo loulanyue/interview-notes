@@ -1,5 +1,6 @@
 creat table page_view (
 user_id bigint,view_time bigint,page_url string,referrer_url string,ip string comment 'creat table sql') partitioned by (dt string,country string);
+
 注：comment后为注释，用单引号区分。分区字段单列，dt和country为两个分区，根据顺序dt为一级分区，country为二级分区，MAXCOMPUTE支持的最大分区数为6个，表的最大列数为1200列。
 
 creat table page_view_test like page_view;
