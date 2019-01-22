@@ -59,11 +59,14 @@ alter table page_view change column id comment 'change';
 alter table page_view partition (dt='2013-01-01') rename to partition (dt='2013-01-02');
 注：修改分区列的值，不支持修改分区列列名，只能修改分区列对应的值。修改多级分区的一个或者多个分区值，多级分区的每一级的分区值都必须写上。
 
+
 creat view if not exists data_1;
 注：创建视图。创建视图时，必须有对视图所引用表的读权限。视图只能包含一个有效的select语句。视图可以引用其它视图，但不能引用自己，也不能循环引用。不允许向视图写入数据，例如使用insert into或者insert overwrite操作视图。当建好视图后，如果视图的引用表发生了变更，有可能导致视图无法访问，例如删除被引用表。您需要自己维护引用表及视图之间的对应关系。如果没有指定if not exists，在视图已经存在时用create view会导致异常。这种情况可以用create or replace view来重建视图，重建后视图本身的权限保持不变。
 
+
 drop view if exists data_1;
 注：删除视图。
+
 
 alter view data_1 rename to data_2;
 注：修改视图名称。
