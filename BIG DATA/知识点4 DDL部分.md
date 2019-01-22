@@ -43,36 +43,49 @@ alter table page_view set comment 'new';
 turncate table page_view;
 注：清除非分区表中的信息
 
+
 turncate table page_view drop partition (dt='2011-12-17);
 注：清除分区表中某个分区的信息
+
 
 creat table page_view (user_id bigint) lifecycle 100;
 注：新建表并把表的生命周期设置为100天。
 
+
 alter table page_view set lifecycle 50;
 注：修改已经有的表格生命周期为50天。
+
 
 alter table page_view add if not exists partition (dt='2015-1-1',region='shanghai');
 注：增加分区，仅支持新增分区，不支持新增分区字段。如果未指定if not exists而同名的分区已存在，则出错返回。目前MaxCompute单表支持的分区数量上限为6万。对于多级分区的表，如果想添加新的分区，必须指明全部的分区值。
 
+
 alter table page_view drop if exists partiton (dt='2015-1-1',region='shanghai');
 注：删除分区。如果分区不存在且未指定if exists，则报错返回。
+
 
 alter table page_view add columns (id bigint,url string);
 注：增加列
 
+
 alter table page_view change column id rename to id_1;
 注：修改列的名字
 
+
 alter table page_view change column id comment 'change';
 注：修改列的注释
+
 
 alter table page_view partition (dt='2013-01-01') rename to partition (dt='2013-01-02');
 注：修改分区列的值，不支持修改分区列列名，只能修改分区列对应的值。修改多级分区的一个或者多个分区值，多级分区的每一级的分区值都必须写上。
 
 
 creat view if not exists data_1;
-注：创建视图。创建视图时，必须有对视图所引用表的读权限。视图只能包含一个有效的select语句。视图可以引用其它视图，但不能引用自己，也不能循环引用。不允许向视图写入数据，例如使用insert into或者insert overwrite操作视图。当建好视图后，如果视图的引用表发生了变更，有可能导致视图无法访问，例如删除被引用表。您需要自己维护引用表及视图之间的对应关系。如果没有指定if not exists，在视图已经存在时用create view会导致异常。这种情况可以用create or replace view来重建视图，重建后视图本身的权限保持不变。
+注：创建视图。创建视图时，必须有对视图所引用表的读权限。视图只能包含一个有效的select语句。
+视图可以引用其它视图，但不能引用自己，也不能循环引用。不允许向视图写入数据，例如使用insert into或者insert overwrite操作视图。
+当建好视图后，如果视图的引用表发生了变更，有可能导致视图无法访问，例如删除被引用表。您需要自己维护引用表及视图之间的对应关系。
+如果没有指定if not exists，在视图已经存在时用create view会导致异常。
+这种情况可以用create or replace view来重建视图，重建后视图本身的权限保持不变。
 
 
 drop view if exists data_1;
