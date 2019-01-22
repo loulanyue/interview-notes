@@ -1,3 +1,4 @@
+
 creat table page_view (
 user_id bigint,view_time bigint,page_url string,referrer_url string,ip string comment 'creat table sql') partitioned by (dt string,country string);
 
