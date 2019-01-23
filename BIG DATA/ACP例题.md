@@ -67,6 +67,7 @@ Graph最早是由Google提出的分布式数据处理模型。× MapReduce才是
 
 Graph擅长完成学术论文、专利文献的引用分析和统计。× 是MapReduce擅长的
 
+
 Graph节点的Halted标志的含义是节点是否参与迭代计算。✔️
 
 对AnalyticDB正确的是？（）
