@@ -25,7 +25,7 @@
 > [数据库系统原理](notes/数据库系统原理.md) </br>
 > [SQL](SQL.md) </br>
 > [Leetcode-Database 题解](Leetcode-Database%20题解.md) </br>
-> [MySQL](MySQL.md) </br>
+> [MySQL](MySQL简介.md) </br>
 > [Redis](Redis.md)
 
 ## ☕️ Java
