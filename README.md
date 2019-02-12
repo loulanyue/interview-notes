@@ -1,8 +1,8 @@
-<!--| Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ | Ⅵ | Ⅶ | Ⅷ | Ⅸ | Ⅹ |
+<!--| Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ | Ⅵ | Ⅶ | Ⅷ | Ⅸ | 
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|
 | 算法[:pencil2:](#pencil2-算法) | 操作系统[:computer:](#computer-操作系统)|网络[:cloud:](#cloud-网络) | 面向对象[:art:](#art-面向对象) |数据库[:floppy_disk:](#floppy_disk-数据库)| Java [:coffee:](#coffee-java)| 系统设计[:bulb:](#bulb-系统设计)| 工具[:wrench:](#wrench-工具)| 编码实践[:watermelon:](#watermelon-编码实践)| -->
 
-| &nbsp;&nbsp;&nbsp;算法&nbsp;&nbsp;&nbsp; | 操作系统 | &nbsp;&nbsp;&nbsp;网络&nbsp;&nbsp;&nbsp; | 面向对象 | &nbsp;&nbsp;数据库&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp; | 系统设计 | &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; | 编码实践 | &nbsp;&nbsp;&nbsp; |
+| &nbsp;&nbsp;&nbsp;算法&nbsp;&nbsp;&nbsp; | 操作系统 | &nbsp;&nbsp;&nbsp;网络&nbsp;&nbsp;&nbsp; | 面向对象 | &nbsp;&nbsp;数据库&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp; | 系统设计 | &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; | 编码实践 | 
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|
 | [:pencil2:](#pencil2-算法) | [:computer:](#computer-操作系统)|[:cloud:](#cloud-网络) | [:art:](#art-面向对象) |[:floppy_disk:](#floppy_disk-数据库)|  [:coffee:](#coffee-java)| [:bulb:](#bulb-系统设计)| [:wrench:](#wrench-工具)| [:watermelon:](#watermelon-编码实践)|
 
@@ -63,3 +63,18 @@
 ## :watermelon: 编码实践 
 > [代码可读性](代码可读性.md)
 > [代码风格规范](代码风格规范.md)
+
+<!--  | Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ | Ⅵ | Ⅶ | Ⅷ | Ⅸ | Ⅹ |
+| :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|
+| 算法[:pencil2:](#pencil2-算法) | 操作系统[:computer:](#computer-操作系统)|网络[:cloud:](#cloud-网络) | 面向对象[:couple:](#couple-面向对象) |数据库[:floppy_disk:](#floppy_disk-数据库)| Java [:coffee:](#coffee-java)| 系统设计[:bulb:](#bulb-系统设计)| 工具[:hammer:](#hammer-工具)| 编码实践[:speak_no_evil:](#speak_no_evil-编码实践)| -->
+
+<!-- | Ⅰ | Ⅱ | Ⅲ | Ⅳ | Ⅴ |
+| :--------: | :---------: | :---------: | :---------: | :---------: |
+| &emsp;&emsp;&emsp;算法&emsp;&emsp;&emsp;<br>[:pencil2:](#pencil2-算法) | &emsp;&emsp;&emsp;操作系统&emsp;&emsp;&emsp;<br>[:computer:](#computer-操作系统) | &emsp;&emsp;&emsp;&emsp;网络&emsp;&emsp;&emsp;&emsp;<br>[:cloud:](#cloud-网络) | &emsp;&emsp;&emsp;面向对象&emsp;&emsp;&emsp;<br>[:couple:](#couple-面向对象) | &emsp;&emsp;&emsp;数据库&emsp;&emsp;<br>[:floppy_disk:](#floppy_disk-数据库)|
+
+| Ⅵ | Ⅶ | Ⅷ | Ⅸ | Ⅹ |
+|:---------:| :---------: | :-------: | :-------:| :------:|
+| &emsp;&emsp;&emsp;Java&emsp;&emsp;&emsp;<br>[:coffee:](#coffee-java) | &emsp;&emsp;&emsp;系统设计&emsp;&emsp;&emsp;<br>[:bulb:](#bulb-系统设计) | &emsp;&emsp;&emsp;&emsp;工具&emsp;&emsp;&emsp;&emsp;<br>[:hammer:](#hammer-工具) | &emsp;&emsp;&emsp;编码实践&emsp;&emsp;&emsp;<br>[:speak_no_evil:](#speak_no_evil-编码实践)  |
+-->
+
+<br>
