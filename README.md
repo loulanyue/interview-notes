@@ -23,10 +23,10 @@
 ## 💾 数据库
 
 > [数据库系统原理](notes/数据库系统原理.md) </br>
-> [SQL](notes/SQL.md) </br>
-> [Leetcode-Database 题解](notes/Leetcode-Database%20题解.md) </br>
-> [MySQL](notes/MySQL.md) </br>
-> [Redis](notes/Redis.md)
+> [SQL](SQL.md) </br>
+> [Leetcode-Database 题解](Leetcode-Database%20题解.md) </br>
+> [MySQL](MySQL.md) </br>
+> [Redis](Redis.md)
 
 ## ☕️ Java
 
