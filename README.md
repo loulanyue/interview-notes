@@ -16,7 +16,7 @@
 ## :computer: 操作系统
 
 > [计算机操作系统](计算机操作系统.md) </br>
-> [Linux](Linux.md)
+> [Linux](Linux简介.md)
 
 ## :cloud: 网络 
 
