@@ -47,19 +47,22 @@ A、月调度    B、周调度    C、天调度    D、季度调度    E
 
 ABCE，没有季度调度，最小单位5分钟
 
+
 通过安全授权，用户可以访问的项目空间中的对象有（）？
 A、表 B、项目 C、函数 D、资源
 
-ACD 表、资源、函数、实例
+        ACD 表、资源、函数、实例
 
-MaxCompute支持外部表，外部表中的数据可以存储在OSS或TS中？✔️
+MaxCompute支持外部表，外部表中的数据可以存储在OSS或TS中？    ✔️
 
 MaxCompute支持的分区类型包括（）
 A、STRING B、TINYINT C、BIGINT D、VARCHAR
-还有smallint、bigint
+                
+        还有smallint、bigint
 
 DataWorks中任务包括哪些类型？
 A、节点任务 B、工作流任务 C、内部节点 D、外部节点
+
 ABC
 
 MaxCompute Graph支持以下图编辑操作：ABC （没有节点间通信）
@@ -74,6 +77,7 @@ Graph节点的Halted标志的含义是节点是否参与迭代计算。✔️
 
 对AnalyticDB正确的是？（）
 A、分析型数据库    B、可用于流式计算    C、支持SQL查询    D、基本计算单元是ECU
+
 ACD
 
 AnalyticDB是阿里云提供的数据仓库，可用于完成PB级别数据的批量计算。 ×擅长的是交互式查询
