@@ -37,7 +37,19 @@ touch -d “20:22” a.txt
 
 mkdir -p a/b/c 自动创建向下关系
 
+cp 原始文件 目标文件
+cp -r 原始目录名称 目标目录名称
 
+rm 文件名称
+rm -f 强制删除文件
+
+dd
+dd if=ana.cfg of=xiatong.cfg bs=100 count=1
+cat xiatong.cfg
+
+file ana.cfg
+file Public/
+file 
 
 
 
