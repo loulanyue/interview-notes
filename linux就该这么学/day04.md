@@ -21,6 +21,27 @@ find / -user linuxprobe -exec cp -rf {} /root \;
 
 echo "redhat123456" | passwd --stdin linuxprobe
 
+通配符
+ls -l /dev/sda*
+[a-z,A-Z]
+
+转义符
+\
+'单引号'	全局转义
+"双引号" 整体
+
+1.以路径的形式来执行
+2.命令的别名形式来执行
+alias 新命令="原始命令"
+/etc/profile 写入文件永久生效
+新命令与原始命令互不冲突，可以同时使用
+3.解释器的内部命令
+4.进行多路径的查找命令并执行
+
+
+
+
+
 
 
 
