@@ -3,27 +3,36 @@ rwx
 特殊权限
 
 1：SUID 让命令的执行者临时获取到了所有者的身份
+
 chmod u+s 文件名
 
 2：SGID 让目录中新的文件的所有组，归属上级目录
+
 chmod -R g+s 文件名
 
 3：SBIT 粘滞位 让目录内的文件只能被文件所有者删除
+
 chmod -R o+t 文件名
+
 rwSrw-rwt 5667
 
 setfacl 设置
+
 getfacl 查看
+
 filesy access control list
 
 setfacl -Rm u:zhangsan:rwx niuniu
+
 ls -ld niuniu/
+
 getfacl niuniu
 
 su 用户名
 su - 用户名
 
 FHS
+
 根目录/
 
     /root 系统管理员的家目录
