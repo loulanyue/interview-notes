@@ -54,9 +54,9 @@ runoob@runoob:~$ docker run hello-world
 
 请在该配置文件中加入（没有该文件的话，请先建一个）：
 
-{
-  "registry-mirrors": ["http://hub-mirror.c.163.com"]
-}
+        {
+          "registry-mirrors": ["http://hub-mirror.c.163.com"]
+        }
 
 在 Cloud Studio 中运行 Docker
 
