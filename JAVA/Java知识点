@@ -1,0 +1,10 @@
+&&短路与
+
+equals 自反 对称 传递 一致
+
+函数不能根据返回类型来区分重载
+
+==和equals 运算符 方法
+
+String不可变类，StringBuffer可变
+
