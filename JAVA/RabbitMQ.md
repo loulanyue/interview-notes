@@ -26,35 +26,35 @@ Spring AMQP2.0新特性
 
 统一模型
 
-1.Listener container for asynchronous processing of inbound messages
+      1.Listener container for asynchronous processing of inbound messages
 
-2.RabbitTemplate for sending and receiving messages
+      2.RabbitTemplate for sending and receiving messages
 
-3.RabbitAdmin for automatically declaring queues,exchanges and bindings
+      3.RabbitAdmin for automatically declaring queues,exchanges and bindings
 
 
 开源MQ中间件
 
-1.Apache Kafka
+      1.Apache Kafka
 
-2.阿里巴巴RocketMQ
+      2.阿里巴巴RocketMQ
 
-3.ActiveMQ
+      3.ActiveMQ
 
-4.ZeroMQ
+      4.ZeroMQ
 
-5.RabbitMQ
+      5.RabbitMQ
 
 
 RabbitMQ 4种交换机
 
-Direct Exchange
+      Direct Exchange
 
-Topic Exchange
+      Topic Exchange
 
-Fanout Exchange
+      Fanout Exchange
 
-Header Exchange
+      Header Exchange
 
 
 RabbitMQ消息队列架构
@@ -67,26 +67,26 @@ Java Spring AMQP架构
 
 核心API
 
-1.RabbitTemplate
+      1.RabbitTemplate
 
-2.SimpleMessageConverter
+      2.SimpleMessageConverter
 
-3.GenericMessageConverter
+      3.GenericMessageConverter
 
-4.Jackson2jsonMessageConverter
+      4.Jackson2jsonMessageConverter
 
-5.ConnectionFactory
+      5.ConnectionFactory
 
-6.@RabbitListener
+      6.@RabbitListener
 
 
 Spring Boot配置
 
-  spring.rabbitmq.host=localhost
-  
-  spring.rabbitmq.port=5672
-  
-  spring.rabbitmq.username=youfanyu
-  
-  spring.rabbitmq.password=admin
+        spring.rabbitmq.host=localhost
+
+        spring.rabbitmq.port=5672
+
+        spring.rabbitmq.username=youfanyu
+
+        spring.rabbitmq.password=admin
 
