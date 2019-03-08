@@ -125,23 +125,98 @@
 		
 		不同于其它预演需要先声明变量
 		shell的变量直接使用，eg:a=15
-		调用变量的话 $a 或者 ${}
+		调用变量的话 $a 或者 ${}	echo $a echo ${a}pple
 		$? $0 $1-$9 $* $#
 		
 	3.2常见的几个符号
 		
-		> >> ; | && ||
+		
+		>覆盖追加 
+		>>不覆盖
+		; 执行多条命令
+		|管道符
+		&&前面的命令执行成功，后面的才可以执行
+		||前面的命令执行失败，后面的才可以执行
 		""会输出变量值
 		‘’输出本身
 		``数据命令结果 eg:a=`date`;echo $a
-		2>/dev/null错误输入
-		1>/dev/null
+		2>/dev/null 错误输出到无底洞
+		1>/dev/null 正确输出到无底洞
+		
 		
 	3.3秒变计算器的运算符
 	
-		加：expr 12+12
-		减：expr 12-12
-		乘：expr 12\*12
-		除：expr 12/12
+		加：expr 12 + 12 echo ${1+1} echo $((1+1))
+		减：expr 12 - 12 
+		乘：expr 12 \* 12
+		除：expr 12 / 12
+		
+		小数：
+			bc计算器
+			保留多少位小数可以通过scale
+			但是scale只对除法，取余数，乘幂 有效，对加减没有效
+			
+		
+	3.4常见的条件判断
+	
+		表达式
+		
+		文件（夹）或者路径
+		-e	目录是否存在exist
+		-d  是否为路径directory	[ -d /home/hadoop ] && echo "123"
+		-f  是否为文件file
+		
+		权限
+		-r  是否有读取权限read
+		-w	是否有写入权限write
+		-x  是否有执行权限excute
+		
+		整数值：
+		-eq  等于equal
+		-ne  不等于 not equal
+		-gt  大于greater than
+		-lt  小于lesser than
+		-ge  大于或者等于greater or equal
+		-le  小于或者等于lesser or equal
+		
+		小数型（浮点型）：		
+		
+		
+		字符串
+		=	相等
+		!=	不相等
+
+			#!/bin/bash
+			#panduanshuru
+			#by yfy 2019-3-8
+
+			if [ $1 -eq $2 ]
+			then
+					echo "$1 equals $2"
+			else 
+					echo "$1 no equals $2"
+			fi
+
+			
+			#!/bin/bash
+			touch $1
+			if [ $? -eq 0 ];then
+					echo "$1 SUCESS!"
+			fi
+			
+			
+第四章 shell脚本的输入以及脚本拥有特效地输出
+	
+	简介：用于读取终端输入的read命令
+		给脚本上色
+	
+	4.1 shell脚本输入之read命令
+	
+		语法：read -p “请您输入密码”
+		
+		-p:给出提示符，默认不支持“\n”换行
+		-s:隐藏输入的内容
+		-t:给出等待的时间，超时会退出read
+		-n:限制读取字符的个数，触发到临界值会自动执行
 		
 	
