@@ -271,6 +271,7 @@
 			
 			-E	正则匹配
 			
+			
 	5.2 处理海量数据之cut命令
 		
 		cut应用场景：通常对数据进行列的提取
@@ -284,3 +285,77 @@
 		-c  以字符为单位进行分割
 		
 		注意：不加-d选项，默认为制表符，不是空格
+		
+		
+			eg:以':'为分隔符，截取出/etc/passwd的第一列跟第三列
+			cut -d ':' -f 1,3 /etc/passwd
+
+			eg:以':'为分隔符，截取出/etc/passwd的第一列到第三列
+			cut -d ':' -f 1-3 /etc/passwd
+
+			eg:以':'为分隔符，截取出/etc/passwd的第二列到最后一列
+			cut -d ':' -f 2- /etc/passwd
+
+		-c
+			eg:截取出/etc/passwd文件第二个字符到第九个字符
+			cut -c 2-9 /etc/passwd
+
+			eg:比如领导想让你截取linux上面所有可登陆的普通用户
+			grep '/bin/bash' /etc/passwd |cut -d ':' -f 1 | grep -v root
+		
+		
+	5.3 处理海量数据之awk命令
+		
+		awk简介：其实是一门语言，支持条件判断，数组，循环等功能，与grep,sed被称为linux三剑客，之所以叫awk是因为其三位创始人 的首字符
+		
+		awk的应用场景：通常对数据进行列的提取
+		
+		语法：
+			
+			awk '条件{执行动作}' 文件名
+			
+			awk '条件1{执行动作} 条件2{执行动作}...' 文件名
+			
+			或awk [选项]'条件1{执行动作} 条件2{执行动作}...' 文件名
+
+			
+		特殊要点与举例说明：
+			
+			printf 格式化输出，不会自动换行
+					（%ns：字符串型，n代表有多个字符；
+					%ni：整型，n代表输出几个数字；
+					%.nf:浮点型，n代表的是小数点后有多少个小数
+					）
+			
+			print	打印出内容，默认会自动换行
+			
+			\t		制表符
+			\n		换行
+				
+				eg:printf '%s\t %s\t %s\t \n' 1 2 3 4 5 6
+				eg：df -h |grep /dev/sda1 | awk '{printf "/dev/sda1的使用率是: "} {print $5}'
+				小数：echo "scale=2; 0.13 + 0.1" | bc | awk '{printf "%.5f\n",$0 }' 
+			
+			$1	代表第一列
+			$2	代表第二列
+			$0	代表一整行
+			
+				eg:df -h |grep /dev/sda1 | awk '{print $5}'
+			
+			-F	指定分隔符
+				
+				eg:cat /etc/passwd |awk -F":" '{print $1}'
+				
+			BEGIN	在读取所有行内容前就开始执行，常常被用于修改内置变量的值
+			FS	BEGIN时定义分隔符
+			
+				eg: cat /etc/passwd | awk 'BEGIN {FS=":"} {print $1}'
+				
+			END	结束的时候执行
+				
+				eg：cat /etc/passwd |awk -F":" '{print $1} END {printf "以上是执行的结果噢\n"}'
+				
+			NR	行号
+				
+				eg:df -h | awk 'NR==2 {print $5}' 
+					awk '(NR>=20 && NR<=30) {print $1}' /etc/passwd
