@@ -1,6 +1,3 @@
-
->注意：如果您是初学者，您可以暂时跳过后面的内容，直接学习 [容器](../container) 一节。
-
 ## 利用 commit 理解镜像构成
 
 
@@ -43,25 +40,25 @@ exit
 
 我们修改了容器的文件，也就是改动了容器的存储层。我们可以通过 `docker diff` 命令看到具体的改动。
 
-```bash
-$ docker diff webserver
-C /root
-A /root/.bash_history
-C /run
-C /usr
-C /usr/share
-C /usr/share/nginx
-C /usr/share/nginx/html
-C /usr/share/nginx/html/index.html
-C /var
-C /var/cache
-C /var/cache/nginx
-A /var/cache/nginx/client_temp
-A /var/cache/nginx/fastcgi_temp
-A /var/cache/nginx/proxy_temp
-A /var/cache/nginx/scgi_temp
-A /var/cache/nginx/uwsgi_temp
-```
+    ```bash
+    $ docker diff webserver
+    C /root
+    A /root/.bash_history
+    C /run
+    C /usr
+    C /usr/share
+    C /usr/share/nginx
+    C /usr/share/nginx/html
+    C /usr/share/nginx/html/index.html
+    C /var
+    C /var/cache
+    C /var/cache/nginx
+    A /var/cache/nginx/client_temp
+    A /var/cache/nginx/fastcgi_temp
+    A /var/cache/nginx/proxy_temp
+    A /var/cache/nginx/scgi_temp
+    A /var/cache/nginx/uwsgi_temp
+    ```
 
 现在我们定制好了变化，我们希望能将其保存下来形成镜像。
 
@@ -97,18 +94,18 @@ nginx               latest              e43d811ce2f4        4 weeks ago         
 
 我们还可以用 `docker history` 具体查看镜像内的历史记录，如果比较 `nginx:latest` 的历史记录，我们会发现新增了我们刚刚提交的这一层。
 
-```bash
-$ docker history nginx:v2
-IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
-07e334659748        54 seconds ago      nginx -g daemon off;                            95 B                修改了默认网页
-e43d811ce2f4        4 weeks ago         /bin/sh -c #(nop)  CMD ["nginx" "-g" "daemon    0 B
-<missing>           4 weeks ago         /bin/sh -c #(nop)  EXPOSE 443/tcp 80/tcp        0 B
-<missing>           4 weeks ago         /bin/sh -c ln -sf /dev/stdout /var/log/nginx/   22 B
-<missing>           4 weeks ago         /bin/sh -c apt-key adv --keyserver hkp://pgp.   58.46 MB
-<missing>           4 weeks ago         /bin/sh -c #(nop)  ENV NGINX_VERSION=1.11.5-1   0 B
-<missing>           4 weeks ago         /bin/sh -c #(nop)  MAINTAINER NGINX Docker Ma   0 B
-<missing>           4 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0 B
-<missing>           4 weeks ago         /bin/sh -c #(nop) ADD file:23aa4f893e3288698c   123 MB
+    ```bash
+    $ docker history nginx:v2
+    IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+    07e334659748        54 seconds ago      nginx -g daemon off;                            95 B                修改了默认网页
+    e43d811ce2f4        4 weeks ago         /bin/sh -c #(nop)  CMD ["nginx" "-g" "daemon    0 B
+    <missing>           4 weeks ago         /bin/sh -c #(nop)  EXPOSE 443/tcp 80/tcp        0 B
+    <missing>           4 weeks ago         /bin/sh -c ln -sf /dev/stdout /var/log/nginx/   22 B
+    <missing>           4 weeks ago         /bin/sh -c apt-key adv --keyserver hkp://pgp.   58.46 MB
+    <missing>           4 weeks ago         /bin/sh -c #(nop)  ENV NGINX_VERSION=1.11.5-1   0 B
+    <missing>           4 weeks ago         /bin/sh -c #(nop)  MAINTAINER NGINX Docker Ma   0 B
+    <missing>           4 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0 B
+    <missing>           4 weeks ago         /bin/sh -c #(nop) ADD file:23aa4f893e3288698c   123 MB
 ```
 
 新的镜像定制好后，我们可以来运行这个镜像。
