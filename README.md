@@ -1,15 +1,11 @@
 
 
-| &nbsp;&nbsp;&nbsp;算法&nbsp;&nbsp;&nbsp; | 操作系统 | &nbsp;&nbsp;&nbsp;网络&nbsp;&nbsp;&nbsp; | 面向对象 | &nbsp;&nbsp;数据库&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp; | 系统设计 | &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; | 编码实践 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  
+| 操作系统 | &nbsp;&nbsp;&nbsp;网络&nbsp;&nbsp;&nbsp; | 面向对象 | &nbsp;&nbsp;数据库&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp; | 系统设计 | &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; | 编码实践 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|
-| [:pencil2:](#pencil2-算法) | [:computer:](#computer-操作系统)|[:cloud:](#cloud-网络) | [:art:](#art-面向对象) |[:floppy_disk:](#floppy_disk-数据库)|  [:coffee:](#coffee-java)| [:bulb:](#bulb-系统设计)| [:wrench:](#wrench-工具)| [:watermelon:](#watermelon-编码实践)| 
+| [:computer:](#computer-操作系统)|[:cloud:](#cloud-网络) | [:art:](#art-面向对象) |[:floppy_disk:](#floppy_disk-数据库)|  [:coffee:](#coffee-java)| [:bulb:](#bulb-系统设计)| [:wrench:](#wrench-工具)| [:watermelon:](#watermelon-编码实践)| 
 
 
-## :pencil2: 算法
 
-> [剑指 Offer 题解](剑指%20offer%20题解.md) </br>
-> [Leetcode 题解](Leetcode%20题解) </br>
-> [算法](notes/算法.md)
 
 ## :computer: 操作系统
 
