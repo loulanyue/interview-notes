@@ -1,8 +1,8 @@
 字符串广泛应用 在Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。
 创建字符串
 创建字符串最简单的方式如下:
-String greeting = "菜鸟教程";
-在代码中遇到字符串常量时，这里的值是 "菜鸟教程""，编译器会使用该值创建一个 String 对象。
+String greeting = "";
+在代码中遇到字符串常量时，这里的值是 """，编译器会使用该值创建一个 String 对象。
 和其它对象一样，可以使用关键字和构造方法来创建 String 对象。
 String 类有 11 种构造方法，这些方法提供不同的参数来初始化字符串，比如提供一个字符数组参数:
 StringDemo.java 文件代码：
@@ -26,7 +26,7 @@ public class StringDemo {
     public static void main(String args[]) {
         String site = "www.runoob.com";
         int len = site.length();
-        System.out.println( "菜鸟教程网址长度 : " + len );
+        System.out.println( "网址长度 : " + len );
    }
 }
 以上实例编译运行结果如下：
@@ -44,12 +44,11 @@ string1.concat(string2);
 StringDemo.java 文件代码：
 public class StringDemo {
     public static void main(String args[]) {     
-        String string1 = "菜鸟教程网址：";     
+        String string1 = "网址：";     
         System.out.println("1、" + string1 + "www.runoob.com");  
     }
 }
 以上实例编译运行结果如下：
-1、菜鸟教程网址：www.runoob.com
 创建格式化字符串
 我们知道输出格式化数字可以使用 printf() 和 format() 方法。
 String 类使用静态方法 format() 返回一个String 对象而不是 PrintStream 对象。
