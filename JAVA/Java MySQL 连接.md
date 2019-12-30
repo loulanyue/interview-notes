@@ -1,6 +1,5 @@
-本章节我们为大家介绍 Java 如何使用 使用 JDBC 连接 MySQL 数据库。
-Java 连接 MySQL 需要驱动包，最新版下载地址为：http://dev.mysql.com/downloads/connector/j/，解压后得到jar库文件，然后在对应的项目中导入该库文件。
-你可以下载本站提供的 jar 包：mysql-connector-java-5.1.39-bin.jar
+### Java 连接 MySQL 需要驱动包，最新版下载地址为：http://dev.mysql.com/downloads/connector/j/，解压后得到jar库文件，然后在对应的项目中导入该库文件。
+可以下载jar 包：mysql-connector-java-5.1.39-bin.jar
 本实例使用的是 Eclipse，导入 jar 包：
 
 创建测试数据
