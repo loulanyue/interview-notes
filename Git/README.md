@@ -1,7 +1,8 @@
 # Git for Windows 国内下载站
-# Git for Windows. 国内直接从官网（http://git-scm.com/download/win）下载比较困难，需要翻墙。这里提供一个国内的下载站，方便网友下载
+### Git for Windows. 国内直接从官网（http://git-scm.com/download/win）
+下载比较困难，需要翻墙。这里提供一个国内的下载站
 
-找不到想要的版本？您可以访问 淘宝 NPM 的 Git for Windows 索引页 https://npm.taobao.org/mirrors/git-for-windows/ 以下载更多版本。
+找不到想要的版本？可以访问 淘宝 NPM 的 Git for Windows 索引页 https://npm.taobao.org/mirrors/git-for-windows/ 以下载更多版本。
 
 The latest (v2.21.0) version of Git for Windows, was released on 2019-2-26.
 
