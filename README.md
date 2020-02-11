@@ -1,8 +1,8 @@
 
 ## :computer: 操作系统
 
-> [计算机操作系统](计算机操作系统.md) </br>
-> [Linux](Linux简介.md)
+> [计算机操作系统](docs/计算机操作系统.md) </br>
+> [Linux](docs/Linux简介.md)
 
 ## :cloud: 网络 
 
