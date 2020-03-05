@@ -1,3 +1,12 @@
+# 0.如果新安装的系统，提升不支持ifconfig
+如果yum不成功，请编辑
+
+         vi /etc/sysconfig/network-scripts/ifcfg-ens33 
+         ONBOOT=yes
+  
+重启后reboot，安装网络插件
+yum -y install net-tools
+
 # 1.更新阿里云yum源：
 
 ## 版本6：
@@ -9,11 +18,23 @@
 ## wget -O /etc/yum.repo.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 
 
-# 2.JDK安装 
+# 2.安装 JDK
 
 ## 传文件到linux:FileZilla
 
 ## /usr/java/jdk1.8.0_201-amd64
+
+vi /etc/profile
+
+      export JAVA_HOME=/usr/jdk/jdk1.8.0_221
+      export CLASSPATH=$:CLASSPATH:$JAVA_HOME/lib/ 
+      export PATH=$PATH:$JAVA_HOME/bin
+      
+source /etc/profile
+java -version
+
+如果提升未找到请检查操作系统版本与jdk版本是否一致
+uname -a
 
 
 # 3.tomcat安装
