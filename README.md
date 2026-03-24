@@ -1,6 +1,13 @@
 # interview-notes
 
-面向面试准备的知识库，按主题拆分为计算机基础、Java、数据库、框架、系统设计、算法、DevOps、前端和大数据等目录。
+面向后端和通用技术面试准备的知识库，内容已经按主题收敛到编号目录中，适合按模块系统复习，也适合临时查缺补漏。
+
+## 如何使用
+
+- 想按主题复习：从下面的“目录导航”进入对应专题
+- 想抓高频主线：优先看各主题目录里的 `README.md` 或总览页
+- 想做复盘和口述训练：搭配 [review-tips.md](./review-tips.md) 一起使用
+- 想继续维护这个仓库：先看 [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 目录导航
 
@@ -68,12 +75,23 @@
 ### 11 Coding Practice
 - [编码与重构实践](./11-coding-practice/README.md)
 
-## 复习建议
+## 推荐复习顺序
+
+1. 计算机基础：操作系统、网络、HTTP
+2. Java：基础语法、集合、并发、JVM
+3. 数据库：SQL、MySQL、Redis
+4. 框架与系统设计：Spring、MyBatis、分布式、消息队列
+5. 算法与编码练习：LeetCode、剑指 Offer、排序
+6. 工具链补充：Linux、Git、Maven、Docker
+
+## 复习与维护
 
 - [面试复习建议](./review-tips.md)
+- [仓库维护规范](./CONTRIBUTING.md)
+- [重构建议记录](./interview-notes-refactor-suggestions.md)
 
-## 重构说明
+## 当前状态
 
-- 目前仓库同时保留了新旧两套目录，根目录导航已经切换到新的编号目录结构。
-- 详细重构方案见 [interview-notes-refactor-suggestions.md](./interview-notes-refactor-suggestions.md)。
-- 后续整理请优先遵循 [CONTRIBUTING.md](./CONTRIBUTING.md) 中的命名和归档规范。
+- 根目录已经统一为编号目录结构，主题入口基本稳定
+- 明显重复和碎片化文档已做过一轮归并，后续更适合做专题级补充而不是继续大规模迁移
+- 新增或调整文档时，优先补充到现有专题主文档，避免重新产生平行重复页
