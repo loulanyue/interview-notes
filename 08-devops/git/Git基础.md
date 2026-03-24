@@ -1,6 +1,8 @@
 <!-- GFM-TOC -->
 * [集中式与分布式](#集中式与分布式)
 * [中心服务器](#中心服务器)
+* [Git 与 SVN 区别速记](#git-与-svn-区别速记)
+* [快速上手](#快速上手)
 * [工作流](#工作流)
 * [分支实现](#分支实现)
 * [冲突](#冲突)
@@ -8,6 +10,8 @@
 * [分支管理策略](#分支管理策略)
 * [储藏（Stashing）](#储藏stashing)
 * [SSH 传输设置](#ssh-传输设置)
+* [常用命令速记](#常用命令速记)
+* [常见问题](#常见问题)
 * [.gitignore 文件](#gitignore-文件)
 * [Git 命令一览](#git-命令一览)
 * [参考资料](#参考资料)
@@ -31,6 +35,52 @@ Git 属于分布式版本控制系统，而 SVN 属于集中式。
 中心服务器用来交换每个用户的修改，没有中心服务器也能工作，但是中心服务器能够 24 小时保持开机状态，这样就能更方便的交换修改。
 
 Github 就是一个中心服务器。
+
+# Git 与 SVN 区别速记
+
+Git 是分布式版本控制系统，而 SVN 更偏集中式管理。快速记忆时可以抓住这几点：
+
+- Git 本地就保存完整历史，离线也能提交和查看版本
+- SVN 更依赖中心服务器，很多操作需要联网
+- Git 分支通常更轻量，创建和合并成本更低
+- Git 通过哈希校验内容完整性，没有像 SVN 那样的全局递增版本号
+
+# 快速上手
+
+## 安装与配置
+
+Windows 环境可以直接使用官方安装包或 Git for Windows，Linux 环境常见安装方式是通过包管理器安装。
+
+初始化后建议先完成这些全局配置：
+
+```bash
+git config --global user.name "your-name"
+git config --global user.email "you@example.com"
+git config --global core.autocrlf false
+git config --global core.quotepath off
+```
+
+如果需要图形化合并工具，也可以配置：
+
+```bash
+git config --global merge.tool "kdiff3"
+```
+
+## SSH 配置
+
+```bash
+ssh-keygen -t rsa -C "you@example.com"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+```
+
+如果执行 `ssh-add ~/.ssh/id_rsa` 时提示 `Could not open a connection to your authentication agent`，可以先执行：
+
+```bash
+eval `ssh-agent -s`
+```
+
+然后重新执行 `ssh-add`。
 
 # 工作流
 
@@ -134,6 +184,50 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 然后把公钥 id_rsa.pub 的内容复制到 Github "Account settings" 的 SSH Keys 中。
 
+# 常用命令速记
+
+- `git init`：初始化本地仓库
+- `git clone <url>`：克隆远端仓库
+- `git add .`：把当前修改加入暂存区
+- `git status`：查看工作区与暂存区状态
+- `git diff`：查看未暂存改动
+- `git diff --cached`：查看已暂存改动
+- `git commit -m "message"`：提交暂存区内容
+- `git pull`：拉取并合并远端更新
+- `git push`：推送本地提交
+- `git checkout <branch>`：切换分支
+- `git stash`：临时保存当前未提交改动
+- `git reset HEAD <file>`：取消某个文件的暂存状态
+- `git rm <file>`：从版本控制中删除文件
+- `git mv old new`：重命名或移动文件
+
+# 常见问题
+
+## failed to push some refs
+
+如果推送时出现下面这类错误，通常说明远端比本地更新：
+
+```text
+! [rejected] master -> master (fetch first)
+error: failed to push some refs
+```
+
+可以先执行：
+
+```bash
+git pull origin master
+git push -u origin master
+```
+
+## Git Merge Failed
+
+如果提示存在 `unmerged files`，一般说明当前还有冲突未解决。处理顺序通常是：
+
+1. 先打开冲突文件并完成手工合并
+2. 使用 `git add` 标记冲突已解决
+3. 重新提交合并结果
+4. 再执行 `git pull` 或 `git push`
+
 # .gitignore 文件
 
 忽略以下文件：
@@ -143,6 +237,31 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 - 自己的敏感信息，比如存放口令的配置文件。
 
 不需要全部自己编写，可以到 [https://github.com/github/gitignore](https://github.com/github/gitignore) 中进行查询。
+
+常见 Java 项目示例：
+
+```gitignore
+*.class
+*.war
+*.ear
+*.orig
+target/
+.setting/
+.project
+.classpath
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+.DS_Store
+Thumbs.db
+```
 
 # Git 命令一览
 

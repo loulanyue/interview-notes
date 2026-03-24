@@ -8,6 +8,35 @@ POM 中可以指定以下配置：
 项目版本
 项目开发者列表
 相关邮件列表信息
+
+## 基于 POM 生成项目文档
+
+如果希望基于 Maven 生成站点文档，通常也是在 `pom.xml` 里配置相关插件，然后执行 `mvn site`。
+
+常见配置示例：
+
+```xml
+<build>
+  <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.3</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
+    </plugins>
+  </pluginManagement>
+</build>
+```
+
+如果执行 `mvn site` 时遇到 `java.lang.NoClassDefFoundError` 之类的站点渲染错误，常见原因是 `maven-site-plugin` 版本过低，升级后通常可以解决。
+
+生成成功后，站点内容一般会出现在 `target/site` 目录。
 在创建 POM 之前，我们首先需要描述项目组 (groupId), 项目的唯一ID。
 <project xmlns = "http://maven.apache.org/POM/4.0.0"
     xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"

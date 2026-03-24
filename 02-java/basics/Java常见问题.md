@@ -28,3 +28,16 @@
       10.NoSuchMethodException
       
 ## String、StringBuilder和StringBuffer
+
+## Spring 启动排错速记
+
+### 同名且不兼容的 Bean 定义
+
+如果启动时报错：
+
+```text
+for bean class [com.xxx.ctsg.service.impl.xxx] conflicts with existing,
+non-compatible bean definition of same name and class
+```
+
+通常表示存在重名 Bean，且类型并不兼容。最直接的处理方式是修改类名或 Bean 名称，确保定义唯一。

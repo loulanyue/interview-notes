@@ -4,6 +4,14 @@ JavaSE（J2SE）（Java2 Platform Standard Edition，java平台标准版）
 JavaEE(J2EE)(Java 2 Platform,Enterprise Edition，java平台企业版)
 JavaME(J2ME)(Java 2 Platform Micro Edition，java平台微型版)。
 2005年6月，JavaOne大会召开，SUN公司公开Java SE 6。此时，Java的各种版本已经更名以取消其中的数字"2"：J2EE更名为Java EE, J2SE更名为Java SE，J2ME更名为Java ME。
+
+快速记忆：
+
+- Java 的核心特征通常可以先抓住平台无关性、GC、面向对象、异常处理和丰富类库
+- `Compile Once, Run Anywhere` 的关键在于源码先编译成字节码，再由不同平台的 JVM 解释或编译执行
+- `.java` 文件会先变成 `.class` 字节码文件，再由对应平台上的 JVM 运行
+- JVM 一般可以拆成 `Class Loader`、`Execution Engine`、`Native Interface` 和 `Runtime Data Area` 几个核心部分
+
 主要特性
 Java语言是简单的：
 Java语言的语法与C语言和C++语言很接近，使得大多数程序员很容易学习和使用。另一方面，Java丢弃了C++中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。特别地，Java语言不使用指针，而是引用。并提供了自动的废料收集，使得程序员不必为内存管理而担忧。

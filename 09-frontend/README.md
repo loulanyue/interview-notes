@@ -1,3 +1,29 @@
+# Frontend
+
+前端相关内容目前以 React、JavaScript、跨域通信和少量 Vue 配置笔记为主。
+
+## 推荐入口
+
+- [Vue CLI 速记](#vue-cli-速记)
+- [iframe 下监听 postMessage](./iframe下监听postMessage并打印接收的消息.md)
+- [Node.js 中 md5 加密验签实例](./nodejs中md5加密验签实例.md)
+
+## Vue CLI 速记
+
+如果是老项目或历史教程，还会遇到基于 `vue-cli` 的初始化流程，可以快速记住下面几步：
+
+```bash
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install -g vue-cli
+vue init webpack my-project
+cnpm install
+npm run dev
+```
+
+更适合现在新项目的方式通常是直接使用 Vite，但这份命令清单仍然适合维护旧仓库时查阅。
+
+## 面试笔记
+
 ### React 的工作原理
 >React 会创建一个虚拟 DOM(virtual DOM)。当一个组件中的状态改变时，React 首先会通过 "diffing" 算法来标记虚拟 DOM 中的改变，第二步是调节(reconciliation)，会用 diff 的结果来更新 DOM
 ### 使用 React 有何优点

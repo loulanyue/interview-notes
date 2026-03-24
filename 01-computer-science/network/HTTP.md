@@ -78,6 +78,13 @@ URI 包含 URL 和 URN。
 
 <div align="center"> <img src="assets/HTTP_ResponseMessageExample.png" width=""/> </div><br>
 
+### 3. 面试速记
+
+- HTTP 交互过程可以概括为：客户端发起 `HTTPRequest`，服务端接收并处理后返回 `HTTPResponse`。
+- 一次请求通常由请求方法、调用地址、请求头，以及在 `POST` / `PUT` / `PATCH` 场景下可选的请求体组成。
+- 一次响应通常由状态码、响应头和响应体组成，实际项目中响应体常见为 JSON。
+- 从 RESTful 语义上看，`GET` 常用于查询，`POST` 常用于新增，`PUT` 常用于整体更新，`PATCH` 常用于部分更新，`DELETE` 常用于删除。
+
 # 二、HTTP 方法
 
 客户端发送的  **请求报文**  第一行为请求行，包含了方法字段。

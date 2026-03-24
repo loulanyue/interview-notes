@@ -45,3 +45,15 @@
 		"value": ""
 	}]
 }
+
+## 4.多层 Map 内嵌时取值
+
+如果外层数据是多层嵌套的 `Map`，可以先取动态 key，再逐层强转：
+
+```java
+String tem = ot.getLong("id").toString();
+Map m1 = (Map) map.get("result");
+Map m2 = (Map) m1.get(tem);
+```
+
+这种写法常见于 FastJSON 或接口返回值结构不稳定的场景，使用前最好先判空并确认 key 是否存在。

@@ -171,6 +171,13 @@ EOF
 $ sudo sysctl -p
 ```
 
+### 卸载 Docker CE
+
+```bash
+$ sudo yum remove docker-ce
+$ sudo rm -rf /var/lib/docker
+```
+
 ### 参考文档
 
 * [Docker 官方 CentOS 安装文档](https://docs.docker.com/install/linux/docker-ce/centos/)。
