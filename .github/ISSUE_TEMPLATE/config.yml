@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/loulanyue/interview-notes/blob/master/CONTRIBUTING.md
+    about: Review the repository structure and navigation rules before proposing large content moves.

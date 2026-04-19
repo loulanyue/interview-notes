@@ -1,0 +1,21 @@
+name: Content request
+description: Suggest a missing topic, high-frequency question set, or new study guide
+title: "[Content]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic request
+      description: What content is missing or should be expanded?
+      placeholder: e.g. JVM 调优面试题、Redis 高频场景题、系统设计案例
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why it matters
+      description: Explain the interview value or review scenario
+      placeholder: This topic appears frequently in backend interviews and lacks a focused review page
+
