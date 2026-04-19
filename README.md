@@ -86,6 +86,7 @@
 
 ## 复习与维护
 
+- [项目面与行为面准备清单](./project-and-behavioral-checklist.md)
 - [面试复习建议](./review-tips.md)
 - [仓库维护规范](./CONTRIBUTING.md)
 - [重构建议记录](./interview-notes-refactor-suggestions.md)
@@ -108,4 +109,3 @@
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=loulanyue/interview-notes&type=date&legend=top-left" />
  </picture>
 </a>
-
