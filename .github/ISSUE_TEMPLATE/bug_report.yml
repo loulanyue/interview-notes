@@ -1,0 +1,23 @@
+name: Bug report
+description: Report broken links, navigation issues, or rendering problems
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is wrong?
+      placeholder: A broken link, missing file, wrong path, or layout problem
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Which file or section is affected?
+      placeholder: README.md, 03-database/README.md, specific heading, etc.
+    validations:
+      required: true
+
