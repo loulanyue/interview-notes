@@ -95,3 +95,17 @@
 - 根目录已经统一为编号目录结构，主题入口基本稳定
 - 明显重复和碎片化文档已做过一轮归并，后续更适合做专题级补充而不是继续大规模迁移
 - 新增或调整文档时，优先补充到现有专题主文档，避免重新产生平行重复页
+
+---
+
+<a id="star-history"></a>
+## ⭐ Star History
+
+<a href="https://www.star-history.com/?repos=loulanyue%2Finterview-notes&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=loulanyue/interview-notes&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=loulanyue/interview-notes&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=loulanyue/interview-notes&type=date&legend=top-left" />
+ </picture>
+</a>
+
