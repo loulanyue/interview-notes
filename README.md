@@ -9,6 +9,13 @@
 - 想做复盘和口述训练：搭配 [review-tips.md](./review-tips.md) 一起使用
 - 想继续维护这个仓库：先看 [CONTRIBUTING.md](./CONTRIBUTING.md)
 
+## 高频复习路线速查
+
+- 后端主线：计算机基础 -> Java -> 数据库 -> 框架 -> 系统设计
+- 面试前冲刺：HTTP / TCP、并发、JVM、MySQL、Redis、消息队列
+- 补短板：算法题、Linux / Git / Docker、常见设计模式
+- 做口述训练：优先复述每个专题 README，再展开到具体主题页
+
 ## 目录导航
 
 ### 01 Computer Science
@@ -108,4 +115,3 @@
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=loulanyue/interview-notes&type=date&legend=top-left" />
  </picture>
 </a>
-
