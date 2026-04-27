@@ -34,3 +34,12 @@ SSH 为建立在应用层和传输层基础上的安全协议。
 4）再设置putty选项，点窗口左侧的SSh –> Auth ，单击窗口右侧的Browse… 选择刚刚生成的私钥， 再点Open ，此时输入root，就不用输入密码就能登录了。
 5_20
 如果在前面你设置了Key Passphrase ，那么此时就会提示你输入密码的。为了更加安全建议大家要设置一个Key Passphrase。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

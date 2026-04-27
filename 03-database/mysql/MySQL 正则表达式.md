@@ -22,3 +22,12 @@ mysql> SELECT name FROM person_tbl WHERE name REGEXP 'ok$';
 mysql> SELECT name FROM person_tbl WHERE name REGEXP 'mar';
 查找name字段中以元音字符开头或以'ok'字符串结尾的所有数据：
 mysql> SELECT name FROM person_tbl WHERE name REGEXP '^[aeiou]|ok$';
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

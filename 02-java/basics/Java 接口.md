@@ -137,3 +137,12 @@ public interface EventListener
 正如EventListener接口，这是由几十个其他接口扩展的Java API，你可以使用一个标记接口来建立一组接口的父接口。例如：当一个接口继承了EventListener接口，Java虚拟机(JVM)就知道该接口将要被用于一个事件的代理方案。
 向一个类添加数据类型：
 这种情况是标记接口最初的目的，实现标记接口的类不需要定义任何接口方法(因为标记接口根本就没有方法)，但是该类通过多态性变成一个接口类型。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

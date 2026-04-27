@@ -22,3 +22,11 @@ Linux 相关内容分为系统基础、Shell 脚本和课程笔记三部分。
 ## 补充资料
 
 - [linux 就该这么学](./linux就该这么学/README.md)
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回上一级导航](../README.md)
+<!-- note-nav:end -->

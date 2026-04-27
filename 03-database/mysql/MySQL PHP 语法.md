@@ -17,3 +17,12 @@ if( !$retval )
 // 其他 MySQL 或 PHP 语句
 ?>
 从下一章开始，我们将学习到更多的MySQL功能函数。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

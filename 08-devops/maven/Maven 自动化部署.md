@@ -84,3 +84,12 @@ C:\MVN\bus-core-api>mvn release:prepare
 Maven 开始构建整个工程。构建成功后即可运行如下 mvn 命令。
 C:\MVN\bus-core-api>mvn release:perform
 构建成功后，你就可以可以验证在你仓库下上传的 JAR 文件是否生效。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

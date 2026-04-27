@@ -90,3 +90,12 @@ public class RunEncap{
 }
 以上代码编译运行结果如下:
 Name : James Age : 20
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

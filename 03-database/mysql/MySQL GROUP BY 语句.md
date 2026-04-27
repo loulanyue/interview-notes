@@ -82,3 +82,12 @@ mysql> SELECT coalesce(name, '总数'), SUM(singin) as singin_count FROM  employ
 | 总数                   |           16 |
 +--------------------------+--------------+
 4 rows in set (0.01 sec)
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

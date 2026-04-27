@@ -38,3 +38,12 @@ chmod +x ./test.sh  #使脚本具有执行权限
 这种运行方式是，直接运行解释器，其参数就是 shell 脚本的文件名，如：
 /bin/sh test.sh
 /bin/php test.php
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../../README.md)
+- [返回当前专题导航](../README.md)
+- [返回上一级主题](../../README.md)
+<!-- note-nav:end -->

@@ -89,3 +89,12 @@ mysqli_close($conn);
 接下来我们可以通过以下语句查看数据表数据：
 读取数据表：
 select * from runoob_tbl;
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

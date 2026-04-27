@@ -73,3 +73,12 @@ mongos> db.runCommand({ enablesharding:"test" }) #设置分片存储的数据库
 mongos> db.runCommand({ shardcollection: "test.log", key: { id:1,time:1}})
 { "collectionsharded" : "test.log", "ok" : 1 }
 步骤五： 程序代码内无需太大更改，直接按照连接普通的mongo数据库那样，将数据库连接接入接口40000
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

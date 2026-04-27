@@ -101,3 +101,12 @@ Max_data_length: 25769803775
 尝试以下实例将数据表 testalter_tbl 重命名为 alter_tbl：
 mysql> ALTER TABLE testalter_tbl RENAME TO alter_tbl;
 ALTER 命令还可以用来创建及删除MySQL数据表的索引，该功能我们会在接下来的章节中介绍。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

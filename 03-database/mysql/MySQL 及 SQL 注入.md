@@ -47,3 +47,12 @@ addcslashes(string,characters)
 string	必需。规定要检查的字符串。
 characters	可选。规定受 addcslashes() 影响的字符或字符范围。
 具体应用可以查看：PHP addcslashes() 函数
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

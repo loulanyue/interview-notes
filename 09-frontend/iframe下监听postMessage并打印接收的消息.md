@@ -13,3 +13,11 @@
 		 }
 		</script>
 ## 注：如果打印结果为：[object Object]，需使用JSON.stringify() 字符串化
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+- [返回当前专题导航](./README.md)
+<!-- note-nav:end -->

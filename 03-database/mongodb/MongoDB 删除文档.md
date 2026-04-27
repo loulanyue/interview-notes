@@ -54,3 +54,12 @@ WriteResult({ "nRemoved" : 2 })           # 删除了两条数据
 >db.col.remove({})
 >db.col.find()
 >
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

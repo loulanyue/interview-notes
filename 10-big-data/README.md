@@ -113,3 +113,10 @@
 		end) /count(empno),2) as rate
 	from 'emp'
 	group by deptno;
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+<!-- note-nav:end -->

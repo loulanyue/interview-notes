@@ -166,3 +166,12 @@ Java 实例 – 获取线程状态
 Java 实例 – 获取所有线程
 Java 实例 – 查看线程优先级
 Java 实例 – 中断线程
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

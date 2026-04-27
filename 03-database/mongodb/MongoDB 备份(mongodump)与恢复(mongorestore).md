@@ -59,3 +59,12 @@ mongorestore 最后的一个参数，设置备份数据所在位置，例如：c
 接下来我们执行以下命令:
 
 >mongorestore
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

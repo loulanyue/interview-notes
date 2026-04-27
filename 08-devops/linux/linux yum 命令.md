@@ -100,3 +100,12 @@ yum makecache
 除了网易之外，国内还有其他不错的 yum 源，比如中科大和搜狐。
 中科大的 yum 源，安装方法查看：https://lug.ustc.edu.cn/wiki/mirrors/help/centos
 sohu 的 yum 源安装方法查看: http://mirrors.sohu.com/help/centos.html
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

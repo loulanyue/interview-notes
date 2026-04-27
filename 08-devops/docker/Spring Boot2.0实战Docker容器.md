@@ -102,3 +102,12 @@ Java Spring Boot 集成Docker插件的项目结构：
 sudo docker run -p 8080:8080 -t springio/gs-spring-boot-docker
 
 如果没有错误，应该正常启动，端口是8080，我们这里访问http://localhost:8080/hello 可以看到简单的字符串 Hello Docker。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -79,3 +79,12 @@ b6c8d2d Documentation/remote-helpers: Add invocation section
 77bc694 rebase-interactive: silence warning when no commits rewritten
 636db2c t3301: add tests to use --format="%N"
 更多 git log 命令可查看：http://git-scm.com/docs/git-log
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

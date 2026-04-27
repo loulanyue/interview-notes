@@ -95,3 +95,11 @@ drop view if exists data_1;
 
 alter view data_1 rename to data_2;
 注：修改视图名称。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+- [返回当前专题导航](./README.md)
+<!-- note-nav:end -->

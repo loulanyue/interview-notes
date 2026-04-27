@@ -1693,3 +1693,11 @@ DELETE /idX/delete HTTP/1.1   -> Returns 404
 
 - 在使用 XMLHttpRequest 的 POST 方法时，浏览器会先发送 Header 再发送 Data。但并不是所有浏览器会这么做，例如火狐就不会。
 - 而 GET 方法 Header 和 Data 会一起发送。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](../README.md)
+<!-- note-nav:end -->

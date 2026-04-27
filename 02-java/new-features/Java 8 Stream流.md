@@ -137,3 +137,11 @@ System.out.println("列表中最大的数 : " + stats.getMax());
 System.out.println("列表中最小的数 : " + stats.getMin());
 System.out.println("所有数之和 : " + stats.getSum());
 System.out.println("平均数 : " + stats.getAverage());
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](../README.md)
+<!-- note-nav:end -->

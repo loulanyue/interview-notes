@@ -110,3 +110,12 @@ $ command > /dev/null
 如果希望屏蔽 stdout 和 stderr，可以这样写：
 $ command > /dev/null 2>&1
 注意：0 是标准输入（STDIN），1 是标准输出（STDOUT），2 是标准错误输出（STDERR）。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../../README.md)
+- [返回当前专题导航](../README.md)
+- [返回上一级主题](../../README.md)
+<!-- note-nav:end -->

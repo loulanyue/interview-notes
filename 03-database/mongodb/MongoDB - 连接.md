@@ -104,3 +104,12 @@ mongodb://localhost/?safe=true
 以安全模式连接到replica set，并且等待至少两个复制服务器成功写入，超时时间设置为2秒。
 
 mongodb://host1,host2,host3/?safe=true;w=2;wtimeoutMS=2000
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

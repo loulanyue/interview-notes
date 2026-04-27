@@ -129,3 +129,11 @@ select /* + mapjoin(a) */
     from shop a join sale_detail b
     on a.shop_name = b.shop_name;
 注：left outer join的左表必须是大表。right outer join的右表必须是大表。inner join左表或右表均可以作为大表。full outer join不能使用MapJoin。MapJoin支持小表为子查询。使用MapJoin时，需要引用小表或是子查询时，需要引用别名。在MapJoin中，可以使用不等值连接或者使用or连接多个条件。目前，MaxCompute在MapJoin中最多支持指定8张小表，否则报语法错误。如果使用MapJoin，则所有小表占用的内存总和不得超过512MB。多个表Join时，最左边的两个表不能同时是MapJoin的表。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+- [返回当前专题导航](./README.md)
+<!-- note-nav:end -->

@@ -298,3 +298,11 @@ VisualVM 提供在 Java 虚拟机 (Java Virutal Machine, JVM) 上运行的 Java 
 - **方法级的程序运行性能分析，找到被调用最多、运行时间最长的方法。**
 - **离线程序快照：收集程序的运行时配置、线程 dump、内存 dump 等信息建立一个快照，可以将快照发送开发者处进行 Bug 反馈。**
 - **其他 plugins 的无限的可能性......**
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](../README.md)
+<!-- note-nav:end -->

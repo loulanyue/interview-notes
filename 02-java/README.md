@@ -17,3 +17,10 @@ Java 主题按内容拆分为以下几个子目录：
 - [JVM](./jvm/Java 虚拟机.md)
 - [IO](./io/Java IO.md)
 - [新特性](./new-features/Java 8 新特性.md)
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+<!-- note-nav:end -->

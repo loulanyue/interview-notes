@@ -57,3 +57,11 @@ v5 <5, Long.MAX_VALUE, false, [<3, 4 > ]>
 达到最大迭代次数。
 
 某个Aggregator的terminate方法返回true。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+- [返回当前专题导航](./README.md)
+<!-- note-nav:end -->

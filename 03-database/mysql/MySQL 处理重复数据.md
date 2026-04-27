@@ -62,3 +62,12 @@ mysql> ALTER TABLE tmp RENAME TO person_tbl;
 当然你也可以在数据表中添加 INDEX（索引） 和 PRIMAY KEY（主键）这种简单的方法来删除表中的重复记录。方法如下：
 mysql> ALTER IGNORE TABLE person_tbl
     -> ADD PRIMARY KEY (last_name, first_name);
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

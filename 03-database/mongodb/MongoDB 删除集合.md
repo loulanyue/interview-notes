@@ -36,3 +36,12 @@ system.indexes
 runoob
 >
 从结果中可以看出 mycol2 集合已被删除。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

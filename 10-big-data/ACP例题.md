@@ -249,3 +249,11 @@ A：MaxCompute 的表分离线表和在线表两种，datahub 是在线表。只
 SQLTask 查询数据和 DownloadSession 在使用及功能上，有何不同？
 A：SQLTask 是运行 SQL 并返回结果，返回条数有限制，默认是 1000 条。
 DownloadSession 是下载某个存在的表里数据，结果条数没限制。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+- [返回当前专题导航](./README.md)
+<!-- note-nav:end -->

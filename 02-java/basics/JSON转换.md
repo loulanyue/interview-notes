@@ -57,3 +57,12 @@ Map m2 = (Map) m1.get(tem);
 ```
 
 这种写法常见于 FastJSON 或接口返回值结构不稳定的场景，使用前最好先判空并确认 key 是否存在。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->
