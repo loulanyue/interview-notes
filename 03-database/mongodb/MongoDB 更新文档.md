@@ -117,3 +117,12 @@ db.col.update( { "count" : { $gt : 15 } } , { $inc : { "count" : 1} },false,true
 只更新第一条记录：
 
 db.col.update( { "count" : { $gt : 10 } } , { $inc : { "count" : 1} },false,false );
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

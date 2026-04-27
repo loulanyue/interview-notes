@@ -80,3 +80,12 @@ password *****
 $ mysqldump -u root -p database_name \
        | mysql -h other-host.com database_name
 以上命令中使用了管道来将导出的数据导入到指定的远程主机上。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

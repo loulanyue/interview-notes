@@ -80,3 +80,12 @@ Hello World!
  1、右键工程--maven--Disable maven nature
  2、在当前目录下执行命令（就是有pom.xml文件的那个目录） —— mvn eclipse:clean
  3、重新转换该工程为maven工程。右键工程--- 'Configure'--- 'Convert to meven project'
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

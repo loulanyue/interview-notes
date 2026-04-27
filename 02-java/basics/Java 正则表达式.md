@@ -352,3 +352,12 @@ PatternSyntaxException 类提供了下面的方法来帮助我们查看发生了
 获取错误的正则表达式模式。
 4	public String getMessage() 
 返回多行字符串，包含语法错误及其索引的描述、错误的正则表达式模式和模式中错误索引的可视化指示。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -33,3 +33,12 @@ warning: You appear to have cloned an empty repository.
 Checking connectivity... done.
 192.168.45.4 为 Git 所在服务器 ip ，你需要将其修改为你自己的 Git 服务 ip。
 这样我们的 Git 服务器安装就完成。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

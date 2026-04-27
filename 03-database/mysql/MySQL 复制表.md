@@ -45,3 +45,12 @@ mysql> INSERT INTO clone_tbl (runoob_id,
 Query OK, 3 rows affected (0.07 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 执行以上步骤后，你将完整的复制表，包括表结构及表数据。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

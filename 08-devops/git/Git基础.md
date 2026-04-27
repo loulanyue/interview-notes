@@ -299,3 +299,12 @@ Thumbs.db
 - [图解 Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
 - [廖雪峰 : Git 教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 - [Learn Git Branching](https://learngitbranching.js.org/)
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -192,3 +192,12 @@ $ java GreetingClient localhost 6066
 远程主机地址：localhost/127.0.0.1:6066
 服务器响应： 谢谢连接我：/127.0.0.1:6066
 Goodbye!
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

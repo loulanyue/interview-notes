@@ -29,3 +29,12 @@ $ git clone git://github.com/schacon/grit.git
 执行该命令后，会在当前目录下创建一个名为grit的目录，其中包含一个 .git 的目录，用于保存下载下来的所有版本记录。
 如果要自己定义要新建的项目目录名称，可以在上面的命令末尾指定新的名字：
 $ git clone git://github.com/schacon/grit.git mygrit
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -191,3 +191,10 @@
       boolean isZkCuratorStarted2 = cto.client.isStarted();
       System.out.println("当前客户的状态：" + (isZkCuratorStarted2 ? "连接中" : "已关闭"));
 
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回上一级导航](../README.md)
+<!-- note-nav:end -->

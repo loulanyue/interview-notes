@@ -176,9 +176,10 @@ mysql删匿名用户：
 
     select user,hsot,password form mysql.user;
 
+---
 
-
-
-
-
-
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回上一级导航](../README.md)
+<!-- note-nav:end -->

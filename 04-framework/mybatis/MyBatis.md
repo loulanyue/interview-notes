@@ -78,3 +78,12 @@ There is no getter for property named 'xxx' in 'class com.xxx'
 - 模糊查询常见写法是 `like concat('%', #{_parameter}, '%')`
 - 返回字段较少时可以创建 DTO 或 VO，避免 `resultType` 直接复用大对象
 - 动态更新语句可结合 `<set>` 和 `<if>`，让 MyBatis 自动处理多字段更新时的逗号问题
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

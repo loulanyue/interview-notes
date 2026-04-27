@@ -378,3 +378,12 @@ mysql> select 3<<1;
 最高优先级为 :=。
 
 最低优先级 !、BINARY、 COLLATE。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

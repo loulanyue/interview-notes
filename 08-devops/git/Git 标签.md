@@ -35,3 +35,12 @@ v1.0
 git tag -a <tagname> -m "runoob.com标签"
 PGP签名标签命令：
 git tag -s <tagname> -m "runoob.com标签"
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

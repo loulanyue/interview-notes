@@ -264,3 +264,12 @@ umount [-fn] 装置文件名或挂载点
 -n ：不升级 /etc/mtab 情况下卸除。
 卸载/dev/hdc6
 [root@www ~]# umount /dev/hdc6
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

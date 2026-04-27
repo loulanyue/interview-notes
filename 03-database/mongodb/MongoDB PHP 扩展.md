@@ -69,3 +69,12 @@ sudo /Applications/XAMPP/xamppfiles/bin/pecl install mongo
 如果以上命令在XMPP或者MAMP中不起作用，你需要在 Github上下载兼容的预编译包。
 
 然后添加 extension=mongodb.so 配置到你的 php.ini 文件中。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

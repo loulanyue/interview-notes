@@ -576,3 +576,12 @@ ConcurrentModificationException可以使用迭代器来规避
 （44）静态类、单例类、工厂类将它们的构造函数置为private
 
 这是因为静态类、单例类、工厂类这种类本来我们就不需要外部将它们new出来，将构造函数置为private之后，保证了这些类不会产生实例对象。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

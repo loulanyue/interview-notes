@@ -68,3 +68,12 @@
 ## 2.硬链接 block文件内容的指针（不能对目录操作，不能跨硬盘来做）
 
 ## find / -i inode
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../../README.md)
+- [返回上一级导航](../README.md)
+- [返回上一级主题](../../README.md)
+<!-- note-nav:end -->

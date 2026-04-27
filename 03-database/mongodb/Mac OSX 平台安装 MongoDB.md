@@ -56,3 +56,12 @@ Welcome to the MongoDB shell.
 2
 > 
 注意：如果你的数据库目录不是/data/db，可以通过 --dbpath 来指定。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -51,3 +51,12 @@ mysqli_close($conn);
 执行成功后，我们使用以下命令，就看不到 runoob_tbl 表了：
 mysql> show tables;
 Empty set (0.01 sec)
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

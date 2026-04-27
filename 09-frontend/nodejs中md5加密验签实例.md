@@ -18,3 +18,11 @@
     md5.update(centerKey)  //再次追加签名
     return md5.digest('hex') //返回验签值
     console.log(result)
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+- [返回当前专题导航](./README.md)
+<!-- note-nav:end -->

@@ -145,3 +145,12 @@ UNIX 平台（Bourne shell 下）：# unset CLASSPATH; export CLASSPATH
 设置CLASSPATH变量:
 Windows 平台（DOS 命令行下）： C:\> set CLASSPATH=C:\users\jack\java\classes
 UNIX 平台（Bourne shell 下）：# CLASSPATH=/home/jack/java/classes; export CLASSPATH
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

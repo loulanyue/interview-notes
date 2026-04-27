@@ -102,3 +102,12 @@ if(!mysqli_query($conn, "insert into runoob_transaction_test (id) values(9)"))
 mysqli_commit($conn);            //执行事务
 mysqli_close($conn);
 ?>
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

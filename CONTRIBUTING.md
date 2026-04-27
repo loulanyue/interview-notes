@@ -17,9 +17,17 @@
 - 新增主题目录时，请补充对应的 `README.md` 导航页。
 - 根目录 [README.md](./README.md) 只保留总览和导航，不再堆叠长篇正文。
 - 复习建议统一维护在 [review-tips.md](./review-tips.md)。
+- 批量补齐文档导航时，执行 `node scripts/standardize-markdown-navigation.mjs`。
 
 ## 渐进式重构
 
 - 旧目录暂时保留，用于平滑迁移和保留历史。
 - 如果要移动文件，优先使用 `git mv`，以保留提交历史。
 - 对重复内容进行合并时，请先更新入口导航，再逐步删除旧副本。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](./README.md)
+<!-- note-nav:end -->

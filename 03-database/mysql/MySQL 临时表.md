@@ -52,3 +52,12 @@ mysql> SELECT * FROM SalesSummary;
 mysql> DROP TABLE SalesSummary;
 mysql>  SELECT * FROM SalesSummary;
 ERROR 1146: Table 'RUNOOB.SalesSummary' doesn't exist
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

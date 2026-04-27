@@ -27,3 +27,12 @@
     2.支持在线修改UNDO表空间
     3.新增管理视图用于监控INNODE表状态
     4.新增innodb_dedicated_server配置项
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -18,3 +18,12 @@ col 集合中的数据如下：
 { "title" : "Java 教程" }
 { "title" : "MongoDB 教程" }
 >
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

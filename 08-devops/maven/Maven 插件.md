@@ -90,3 +90,12 @@ Maven 将开始处理并显示 clean 生命周期的 clean 阶段。
 你可以定义阶段，插件会使用它的 phase 元素开始处理。我们已经使用了 clean 阶段。
 你可以通过绑定到插件的目标的方式来配置要执行的任务。我们已经绑定了 echo 任务到 maven-antrun-plugin 的 run 目标。
 就是这样，Maven 将处理剩下的事情。它将下载本地仓库中获取不到的插件，并开始处理。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

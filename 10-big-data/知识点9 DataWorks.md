@@ -162,3 +162,11 @@ dt=to_char(dateadd(TO_DATE('${bdp.system.bizdate}', 'yyyymmdd'), -1, 'dd'), 'yyy
 
 
 等待自定义任务的上一周期结束，才能继续运行：应用场景：天任务 A 依赖一个数据是天任务 B 昨天产出的。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../README.md)
+- [返回当前专题导航](./README.md)
+<!-- note-nav:end -->

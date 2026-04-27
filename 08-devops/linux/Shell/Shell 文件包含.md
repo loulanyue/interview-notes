@@ -30,3 +30,12 @@ $ chmod +x test2.sh
 $ ./test2.sh 
 菜鸟教程官网地址：http://www.runoob.com
 注：被包含的文件 test1.sh 不需要可执行权限。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../../README.md)
+- [返回当前专题导航](../README.md)
+- [返回上一级主题](../../README.md)
+<!-- note-nav:end -->

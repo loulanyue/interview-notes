@@ -59,3 +59,12 @@ mysql> CREATE TABLE insect
 )engine=innodb auto_increment=100 charset=utf8;
 或者你也可以在表创建成功后，通过以下语句来实现：
 mysql> ALTER TABLE t AUTO_INCREMENT = 100;
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

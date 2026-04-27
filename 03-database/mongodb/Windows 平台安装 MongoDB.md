@@ -124,3 +124,12 @@ WriteResult({ "nInserted" : 1 })
 { "_id" : ObjectId("5604ff74a274a611b0c990aa"), "x" : 10 }
 >
 第一个命令将数字 10 插入到 runoob 集合的 x 字段中。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -7,3 +7,11 @@
 ### 解法：
 	ERROR: Cannot load this JVM TI agent twice, check your java command line for duplicate jdwp options.
 	在.xml将-Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n 去掉
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](../README.md)
+<!-- note-nav:end -->

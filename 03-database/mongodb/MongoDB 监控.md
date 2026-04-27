@@ -53,3 +53,12 @@ read：
 write：
 
 提供这个命名空间进行写操作，这mongod花了大量的时间。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

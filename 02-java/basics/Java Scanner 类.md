@@ -135,3 +135,12 @@ $ java ScannerDemo
 end
 4个数的和为71.4
 4个数的平均值是17.85
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

@@ -64,3 +64,12 @@ Character 方法
 8	toString()
 返回字符的字符串形式，字符串的长度仅为1
 对于方法的完整列表，请参考的 java.lang.Character API 规范。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

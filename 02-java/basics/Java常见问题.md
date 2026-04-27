@@ -41,3 +41,12 @@ non-compatible bean definition of same name and class
 ```
 
 通常表示存在重名 Bean，且类型并不兼容。最直接的处理方式是修改类名或 Bean 名称，确保定义唯一。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->

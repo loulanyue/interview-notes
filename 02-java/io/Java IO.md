@@ -570,3 +570,11 @@ NIO 与普通 I/O 的区别主要有以下两点：
 
 - NIO 是非阻塞的；
 - NIO 面向块，I/O 面向流。
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](../README.md)
+<!-- note-nav:end -->

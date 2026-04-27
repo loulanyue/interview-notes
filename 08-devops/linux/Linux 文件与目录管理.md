@@ -300,3 +300,12 @@ tail [-n number] 文件
 [root@www ~]# tail /etc/man.config
 # 默认的情况中，显示最后的十行！若要显示最后的 20 行，就得要这样：
 [root@www ~]# tail -n 20 /etc/man.config
+
+---
+
+<!-- note-nav:start -->
+## 导航
+- [返回仓库首页](../../README.md)
+- [返回当前专题导航](./README.md)
+- [返回上一级主题](../README.md)
+<!-- note-nav:end -->
